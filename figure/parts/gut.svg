@@ -16,10 +16,6 @@
     <stop offset="0" stop-color="#feab98"/><stop offset="0.4" stop-color="#f69083"/>
     <stop offset="0.75" stop-color="#e57172"/><stop offset="1" stop-color="#c4505a"/>
   </radialGradient>
-  <linearGradient id="gut-sig" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#f69a8e"/><stop offset="0.35" stop-color="#fcab9b"/>
-    <stop offset="0.75" stop-color="#f08a80"/><stop offset="1" stop-color="#d86870"/>
-  </linearGradient>
   <radialGradient id="gut-lobeR" cx="0.35" cy="0.3" r="0.8">
     <stop offset="0" stop-color="#ffb8a6"/><stop offset="0.4" stop-color="#fb9d90"/>
     <stop offset="0.8" stop-color="#ee8079"/><stop offset="1" stop-color="#d4626a"/>

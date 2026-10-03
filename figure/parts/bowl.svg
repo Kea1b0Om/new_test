@@ -65,17 +65,17 @@
     </linearGradient>
     <!-- decoction -->
     <linearGradient id="bowl-liq" gradientUnits="userSpaceOnUse" x1="0" y1="9" x2="0" y2="23">
-      <stop offset="0" stop-color="#a06a26"/>
-      <stop offset="0.1" stop-color="#8f5b1c"/>
-      <stop offset="0.22" stop-color="#84501a"/>
-      <stop offset="0.36" stop-color="#6c3a0c"/>
-      <stop offset="0.5" stop-color="#572905"/>
-      <stop offset="0.65" stop-color="#4c1d02"/>
-      <stop offset="0.8" stop-color="#421b06"/>
-      <stop offset="0.9" stop-color="#2f1306"/>
+      <stop offset="0" stop-color="#a46e2a"/>
+      <stop offset="0.1" stop-color="#9a6524"/>
+      <stop offset="0.22" stop-color="#8a561c"/>
+      <stop offset="0.36" stop-color="#713f0f"/>
+      <stop offset="0.5" stop-color="#5e2e07"/>
+      <stop offset="0.65" stop-color="#532405"/>
+      <stop offset="0.8" stop-color="#4a2209"/>
+      <stop offset="0.9" stop-color="#3a1a08"/>
       <stop offset="1" stop-color="#3a271b"/>
     </linearGradient>
-    <radialGradient id="bowl-liqR" gradientUnits="userSpaceOnUse" cx="364" cy="13.4" r="12" gradientTransform="translate(364 13.4) scale(1 0.36) translate(-364 -13.4)">
+    <radialGradient id="bowl-liqR" gradientUnits="userSpaceOnUse" cx="364.5" cy="13.9" r="12" gradientTransform="translate(364.5 13.9) scale(1 0.42) translate(-364.5 -13.9)">
       <stop offset="0" stop-color="#b8711f" stop-opacity="0.95"/>
       <stop offset="0.6" stop-color="#ad681c" stop-opacity="0.75"/>
       <stop offset="1" stop-color="#985716" stop-opacity="0"/>
@@ -125,6 +125,9 @@
 
     <clipPath id="bowl-cInner">
       <ellipse cx="348" cy="13.5" rx="33" ry="9.75" transform="rotate(-0.6 348 13.5)"/>
+    </clipPath>
+    <clipPath id="bowl-cLiq">
+      <path d="M319,16.3 C321,12.7 333,9.1 348,9 C356,9.1 361,10 365,11 C368.4,11.8 370.6,12.2 372,12.6 C374.8,13.4 377,14.6 378,16 C377.4,16.8 376.6,17.8 375,18.3 C374,18.7 373.2,19 372,19.35 C369.8,20 367.8,20.8 365,21.4 C361.4,22.1 358,22.7 355,22.9 C351.6,23.1 348.4,23.1 345,23 C341.4,22.75 338,22.5 335,22.1 C331,21.5 327.6,20.7 325,19.85 C322.4,18.8 320.4,17.6 319,16.3 Z"/>
     </clipPath>
     <clipPath id="bowl-cBody">
       <path d="M312.2,13 C312.5,20 315.5,28.5 318.6,33.5 C321,37.4 324.5,40.6 330.4,42.4 L365.2,42.4 C371.1,40.6 374.6,37.4 377.3,33.5 C380.6,28.5 383.9,20 383.5,12.6 Z"/>
@@ -186,6 +189,14 @@
     <ellipse cx="327" cy="17" rx="7" ry="2.6" fill="#33190a" opacity="0.45" filter="url(#bowl-b08)"/>
     <!-- subtle lighter streak near the top -->
     <path d="M331,11.4 C337,10.3 345,10 352,10.3" fill="none" stroke="#a46d2c" stroke-width="0.8" opacity="0.5" filter="url(#bowl-b03)"/>
+    <g clip-path="url(#bowl-cLiq)">
+      <!-- dark rim along the lower edge of the liquid -->
+      <path d="M318.6,15.6 C320.5,18 323,19.4 326,20.4 C330,21.6 335,22.4 341,22.9 C348,23.3 356,23 363,21.8 C368,20.9 372,19.6 376,17.6" fill="none" stroke="#230d02" stroke-width="2.2" opacity="0.45" filter="url(#bowl-b05)"/>
+      <!-- boundary under the lighter upper band -->
+      <path d="M324,14.2 C333,13 343,12.8 352,13.4 C360,14 367,15.2 374,16.4" fill="none" stroke="#5a2a06" stroke-width="1.4" opacity="0.35" filter="url(#bowl-b05)"/>
+      <!-- meniscus -->
+      <path d="M321,13.4 C327,10.8 337,9.4 348,9.3 C358,9.4 367,10.6 374,13" fill="none" stroke="#b07a34" stroke-width="0.8" opacity="0.55" filter="url(#bowl-b03)"/>
+    </g>
   </g>
   <!-- inner lip line (visible on the left/top) -->
   <path d="M319.2,17.2 C316.6,15.8 315.2,13.6 316,11.2 C318.4,8.8 324.5,6.3 330.5,4.8 C337,3.8 346,3.4 356,3.8" fill="none" stroke="url(#bowl-lipL)" stroke-width="1"/>
