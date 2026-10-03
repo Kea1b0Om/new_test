@@ -12,7 +12,7 @@ def catmull(pts, n=12):
             t = k / n; t2, t3 = t * t, t * t * t
             out.append(tuple(0.5 * ((2 * p1[j]) + (-p0[j] + p2[j]) * t + (2 * p0[j] - 5 * p1[j] + 4 * p2[j] - p3[j]) * t2 + (-p0[j] + 3 * p1[j] - 3 * p2[j] + p3[j]) * t3) for j in range(2)))
     out.append(pts[-1]); return out
-def arrow(pts, w0, w1, L, H, N=1.5, tip=None):
+def arrow(pts, w0, w1, L, H, N=1.5, tip=None, gamma=1.0):
     c = catmull(pts)
     # cumulative length
     s = [0.0]
@@ -23,7 +23,7 @@ def arrow(pts, w0, w1, L, H, N=1.5, tip=None):
         a, b = c[max(0, i - 1)], c[min(len(c) - 1, i + 1)]
         dx, dy = b[0] - a[0], b[1] - a[1]; d = math.hypot(dx, dy) or 1
         nx, ny = -dy / d, dx / d
-        w = (w0 + (w1 - w0) * s[i] / tot) / 2
+        w = (w0 + (w1 - w0) * (s[i] / tot) ** gamma) / 2
         left.append((p[0] + nx * w, p[1] + ny * w)); right.append((p[0] - nx * w, p[1] - ny * w))
     end = c[-1]; a = c[-3]
     dx, dy = end[0] - a[0], end[1] - a[1]; d = math.hypot(dx, dy); ux, uy = dx / d, dy / d; nx, ny = -uy, ux

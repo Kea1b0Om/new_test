@@ -2,13 +2,13 @@
 <!--@fonts-->
 <defs>
   <linearGradient id="hdrFill" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#e6f4ff"/><stop offset="1" stop-color="#d3e9fa"/>
+    <stop offset="0" stop-color="#e5f5ff"/><stop offset="1" stop-color="#dcf0fd"/>
   </linearGradient>
   <linearGradient id="hdrTag" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#b6dcf6"/><stop offset="1" stop-color="#a2cff0"/>
+    <stop offset="0" stop-color="#b0dbfb"/><stop offset="1" stop-color="#a0d1f8"/>
   </linearGradient>
   <linearGradient id="lblFill" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#e3f1fc"/><stop offset="1" stop-color="#d5e8f7"/>
+    <stop offset="0" stop-color="#e4f3ff"/><stop offset="1" stop-color="#ddeefc"/>
   </linearGradient>
   <linearGradient id="subFill" x1="0" y1="0" x2="0" y2="1">
     <stop offset="0" stop-color="#f1f7fd"/><stop offset="1" stop-color="#e9f2fb"/>
@@ -17,29 +17,36 @@
     <stop offset="0" stop-color="#e9f3fc"/><stop offset="1" stop-color="#dcebf8"/>
   </linearGradient>
   <linearGradient id="sigFill" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#e6d8fd"/><stop offset="1" stop-color="#d6c3f6"/>
+    <stop offset="0" stop-color="#e1cafd"/><stop offset="1" stop-color="#d9c3f8"/>
   </linearGradient>
   <linearGradient id="sepLine" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="732" y2="0">
     <stop offset="0" stop-color="#a9bcc3" stop-opacity="0.6"/><stop offset="0.08" stop-color="#8ea3ac"/>
     <stop offset="0.92" stop-color="#8ea3ac"/><stop offset="1" stop-color="#9fb4bc" stop-opacity="0.5"/>
   </linearGradient>
   <radialGradient id="molPurple" cx="0.38" cy="0.32" r="0.7">
-    <stop offset="0" stop-color="#e9d8ff"/><stop offset="0.35" stop-color="#b48ae6"/>
-    <stop offset="0.8" stop-color="#8650c8"/><stop offset="1" stop-color="#6c3aae"/>
+    <stop offset="0" stop-color="#f0dcff"/><stop offset="0.35" stop-color="#cf98fb"/>
+    <stop offset="0.8" stop-color="#9f63d8"/><stop offset="1" stop-color="#7c47b8"/>
   </radialGradient>
   <radialGradient id="molRed" cx="0.38" cy="0.32" r="0.7">
-    <stop offset="0" stop-color="#ffd2cf"/><stop offset="0.4" stop-color="#ee8a84"/>
-    <stop offset="0.85" stop-color="#d4554f"/><stop offset="1" stop-color="#b9413c"/>
+    <stop offset="0" stop-color="#ffdcdf"/><stop offset="0.45" stop-color="#ffb0b2"/>
+    <stop offset="0.9" stop-color="#e57283"/><stop offset="1" stop-color="#d0606f"/>
   </radialGradient>
   <filter id="softShadow" x="-10%" y="-20%" width="120%" height="150%">
     <feGaussianBlur in="SourceAlpha" stdDeviation="0.8"/>
-    <feOffset dx="0" dy="0.8" result="b"/>
-    <feComponentTransfer><feFuncA type="linear" slope="0.25"/></feComponentTransfer>
+    <feOffset dx="0" dy="0.5" result="b"/>
+    <feFlood flood-color="#8fb0cc" flood-opacity="0.22"/>
+    <feComposite in2="b" operator="in"/>
     <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
   <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-    <feGaussianBlur in="SourceAlpha" stdDeviation="1.8" result="b"/>
-    <feFlood flood-color="#7fdde6" flood-opacity="0.55"/>
+    <feGaussianBlur in="SourceAlpha" stdDeviation="1.5" result="b"/>
+    <feFlood flood-color="#8ff3f7" flood-opacity="0.85"/>
+    <feComposite in2="b" operator="in" result="halo"/>
+    <feMerge><feMergeNode in="halo"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="textGlow" x="-5%" y="-30%" width="110%" height="160%">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="1.2" result="b"/>
+    <feFlood flood-color="#b5f6ff" flood-opacity="0.9"/>
     <feComposite in2="b" operator="in" result="halo"/>
     <feMerge><feMergeNode in="halo"/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
@@ -54,26 +61,26 @@
 <g id="panelA">
   <!-- header -->
   <g id="hdrA" filter="url(#softShadow)">
-    <rect x="4" y="7" width="149" height="25" rx="4" fill="url(#hdrFill)" stroke="#a6c6de" stroke-width="0.9"/>
-    <path d="M8 7.45 H32 V31.55 H8 A3.55 3.55 0 0 1 4.45 28 V11 A3.55 3.55 0 0 1 8 7.45 Z" fill="url(#hdrTag)"/>
-    <line x1="32" y1="7.5" x2="32" y2="31.5" stroke="#9cc0dc" stroke-width="0.6"/>
+    <rect x="3.5" y="7.4" width="149" height="24" rx="4" fill="url(#hdrFill)" stroke="#86a0b4" stroke-width="1"/>
+    <path d="M7.60 7.90 H31.50 V30.90 H7.60 A3.6 3.6 0 0 1 4.00 27.30 V11.50 A3.6 3.6 0 0 1 7.60 7.90 Z" fill="url(#hdrTag)"/>
+    <line x1="31.5" y1="7.9" x2="31.5" y2="30.9" stroke="#86a8c4" stroke-width="0.7"/>
   </g>
   <text data-k="A" x="18.2" y="26.2" font-size="19.6" font-weight="700" fill="#0b1f45" text-anchor="middle">A</text>
-  <text data-k="hdrA" x="41.42" y="25.1" font-size="15.6" font-weight="700" fill="#0d1838" textLength="96.84" lengthAdjust="spacingAndGlyphs"><tspan font-style="italic">In vivo</tspan> findings</text>
+  <text data-k="hdrAi" x="41" y="25.1" font-size="15.6" font-weight="800" fill="#07102f" font-style="italic" textLength="42.5" lengthAdjust="spacingAndGlyphs">In vivo</text>
+  <text data-k="hdrAr" x="87" y="25.1" font-size="15.6" font-weight="800" fill="#07102f" textLength="50.53" lengthAdjust="spacingAndGlyphs">findings</text>
 
   <!-- sub-panel backgrounds (FMT / PAGly exposure) -->
   <rect x="74" y="180" width="264" height="46" rx="3" fill="url(#subFill)" filter="url(#feather)" opacity="0.95"/>
   <rect x="384" y="180" width="268" height="46" rx="3" fill="url(#subFill)" filter="url(#feather)" opacity="0.95"/>
 
   <!-- solid teal arrows from LGZGD -->
-  <g id="tealArrowsA" fill="#1f9da6" filter="url(#glow)">
-    <path transform="translate(-0.5 1)" d="M299.88 31.81 L298.71 31.98 L297.24 32.18 L295.52 32.42 L293.58 32.69 L291.47 32.98 L289.24 33.30 L286.93 33.62 L284.60 33.96 L282.27 34.30 L280.00 34.63 L277.84 34.96 L275.83 35.28 L273.92 35.60 L272.05 35.92 L270.21 36.24 L268.39 36.57 L266.58 36.90 L264.78 37.23 L262.98 37.57 L261.18 37.91 L259.36 38.25 L257.53 38.59 L255.67 38.94 L253.77 39.28 L251.84 39.62 L249.88 39.97 L247.90 40.31 L245.91 40.66 L243.90 41.01 L241.88 41.37 L239.85 41.72 L237.82 42.08 L235.78 42.44 L233.75 42.81 L231.73 43.18 L229.72 43.55 L227.71 43.93 L225.71 44.30 L223.71 44.66 L221.70 45.03 L219.70 45.41 L217.69 45.78 L215.68 46.17 L213.66 46.57 L211.65 46.99 L209.63 47.42 L207.61 47.87 L205.59 48.34 L203.54 48.84 L201.46 49.37 L199.35 49.91 L197.22 50.48 L195.10 51.06 L192.99 51.64 L190.90 52.24 L188.86 52.83 L186.87 53.43 L184.95 54.02 L183.12 54.59 L181.37 55.16 L179.70 55.72 L178.09 56.29 L176.54 56.87 L175.05 57.44 L173.61 58.01 L172.23 58.58 L170.91 59.13 L169.64 59.68 L168.43 60.21 L167.27 60.72 L166.17 61.21 L165.11 61.69 L164.09 62.16 L163.10 62.63 L162.16 63.10 L161.28 63.56 L160.45 64.01 L159.68 64.43 L158.97 64.83 L158.32 65.20 L157.74 65.54 L157.23 65.83 L156.80 66.08 L156.43 66.28 L151.78 64.74 L146.30 76.60 L159.22 74.66 L158.57 70.12 L158.97 69.89 L159.44 69.61 L159.96 69.30 L160.53 68.96 L161.15 68.59 L161.82 68.19 L162.54 67.78 L163.32 67.34 L164.14 66.89 L165.01 66.44 L165.92 65.98 L166.89 65.51 L167.92 65.03 L169.01 64.52 L170.14 63.99 L171.32 63.45 L172.55 62.89 L173.83 62.32 L175.16 61.75 L176.54 61.17 L177.98 60.58 L179.47 60.00 L181.02 59.42 L182.63 58.84 L184.32 58.25 L186.12 57.65 L188.00 57.03 L189.95 56.41 L191.96 55.78 L194.01 55.16 L196.09 54.53 L198.18 53.92 L200.28 53.32 L202.36 52.74 L204.41 52.19 L206.41 51.66 L208.39 51.15 L210.37 50.67 L212.35 50.21 L214.34 49.76 L216.32 49.33 L218.31 48.90 L220.30 48.49 L222.30 48.08 L224.29 47.67 L226.29 47.27 L228.29 46.86 L230.28 46.45 L232.28 46.03 L234.29 45.63 L236.31 45.22 L238.33 44.82 L240.35 44.43 L242.37 44.03 L244.38 43.64 L246.39 43.26 L248.38 42.87 L250.35 42.49 L252.30 42.10 L254.23 41.72 L256.13 41.34 L257.99 40.96 L259.82 40.58 L261.63 40.21 L263.43 39.84 L265.22 39.47 L267.01 39.10 L268.80 38.73 L270.61 38.37 L272.43 38.02 L274.29 37.66 L276.17 37.32 L278.17 36.96 L280.32 36.59 L282.57 36.21 L284.89 35.83 L287.21 35.45 L289.51 35.08 L291.73 34.72 L293.83 34.39 L295.76 34.09 L297.49 33.81 L298.95 33.58 L300.12 33.39 Z"/>
-    <path transform="translate(1.5 1)" d="M429.28 33.77 L430.19 34.03 L431.27 34.36 L432.52 34.75 L433.92 35.19 L435.46 35.67 L437.13 36.18 L438.90 36.70 L440.76 37.23 L442.70 37.75 L444.69 38.26 L446.74 38.75 L448.81 39.20 L450.96 39.61 L453.23 40.00 L455.61 40.37 L458.07 40.74 L460.61 41.10 L463.20 41.45 L465.81 41.82 L468.45 42.19 L471.08 42.58 L473.68 43.00 L476.25 43.44 L478.76 43.92 L481.24 44.42 L483.73 44.93 L486.21 45.47 L488.70 46.01 L491.18 46.58 L493.67 47.16 L496.15 47.77 L498.63 48.39 L501.11 49.03 L503.59 49.70 L506.07 50.39 L508.55 51.10 L511.09 51.87 L513.73 52.69 L516.45 53.57 L519.21 54.49 L521.97 55.43 L524.69 56.37 L527.34 57.31 L529.89 58.23 L532.29 59.11 L534.52 59.93 L536.53 60.69 L538.29 61.37 L539.77 61.96 L541.00 62.49 L542.02 62.96 L542.87 63.38 L543.56 63.75 L544.15 64.10 L544.66 64.42 L545.15 64.75 L545.64 65.09 L546.18 65.45 L546.78 65.84 L547.44 66.23 L548.11 66.62 L548.76 67.02 L549.41 67.42 L550.05 67.83 L550.67 68.23 L551.27 68.63 L551.84 69.00 L552.37 69.36 L552.86 69.69 L553.31 69.99 L553.70 70.25 L554.02 70.46 L551.64 73.79 L564.20 77.40 L560.31 64.93 L556.38 66.74 L556.07 66.55 L555.70 66.32 L555.26 66.03 L554.76 65.71 L554.21 65.36 L553.62 64.99 L552.99 64.59 L552.33 64.19 L551.65 63.77 L550.95 63.36 L550.25 62.95 L549.56 62.57 L548.96 62.23 L548.45 61.92 L547.96 61.60 L547.45 61.27 L546.89 60.91 L546.27 60.53 L545.55 60.13 L544.71 59.70 L543.74 59.24 L542.60 58.75 L541.27 58.21 L539.71 57.63 L537.90 56.98 L535.85 56.25 L533.59 55.46 L531.15 54.63 L528.56 53.76 L525.87 52.88 L523.11 51.98 L520.31 51.09 L517.51 50.23 L514.74 49.40 L512.04 48.62 L509.45 47.90 L506.93 47.23 L504.41 46.58 L501.89 45.96 L499.37 45.37 L496.85 44.79 L494.33 44.24 L491.82 43.70 L489.30 43.19 L486.79 42.69 L484.27 42.20 L481.76 41.74 L479.24 41.28 L476.69 40.86 L474.07 40.46 L471.43 40.10 L468.77 39.76 L466.12 39.44 L463.49 39.13 L460.90 38.83 L458.37 38.53 L455.91 38.22 L453.55 37.90 L451.31 37.56 L449.19 37.20 L447.15 36.81 L445.14 36.37 L443.16 35.91 L441.24 35.44 L439.39 34.95 L437.62 34.47 L435.96 34.01 L434.41 33.56 L433.00 33.15 L431.73 32.79 L430.63 32.48 L429.72 32.23 Z"/>
+  <g id="tealArrowsA" fill="#2b8a90" filter="url(#glow)">
+    <path d="M305.99 34.35 L305.39 34.34 L304.62 34.37 L303.72 34.41 L302.71 34.47 L301.61 34.53 L300.46 34.61 L299.28 34.69 L298.10 34.77 L296.95 34.87 L295.85 34.96 L294.83 35.06 L293.93 35.15 L293.11 35.26 L292.36 35.36 L291.67 35.48 L291.01 35.60 L290.38 35.72 L289.77 35.84 L289.17 35.96 L288.57 36.08 L287.95 36.20 L287.31 36.31 L286.63 36.41 L285.90 36.51 L285.15 36.60 L284.39 36.68 L283.64 36.75 L282.87 36.81 L282.09 36.88 L281.27 36.94 L280.43 37.00 L279.54 37.07 L278.60 37.15 L277.60 37.24 L276.54 37.34 L275.40 37.45 L274.22 37.57 L273.02 37.69 L271.78 37.81 L270.49 37.94 L269.16 38.07 L267.76 38.21 L266.31 38.37 L264.78 38.54 L263.18 38.73 L261.49 38.94 L259.71 39.18 L257.84 39.44 L255.82 39.73 L253.66 40.05 L251.36 40.40 L248.96 40.77 L246.48 41.15 L243.95 41.55 L241.40 41.97 L238.85 42.39 L236.34 42.81 L233.88 43.23 L231.50 43.64 L229.24 44.05 L227.08 44.45 L224.97 44.84 L222.90 45.23 L220.88 45.61 L218.88 46.00 L216.91 46.40 L214.95 46.80 L213.00 47.22 L211.04 47.65 L209.08 48.10 L207.10 48.57 L205.10 49.06 L203.06 49.57 L200.98 50.12 L198.87 50.68 L196.74 51.27 L194.62 51.86 L192.51 52.47 L190.43 53.08 L188.39 53.70 L186.40 54.31 L184.48 54.92 L182.65 55.52 L180.90 56.10 L179.24 56.69 L177.63 57.28 L176.08 57.87 L174.59 58.47 L173.15 59.06 L171.78 59.65 L170.46 60.23 L169.19 60.79 L167.98 61.34 L166.83 61.87 L165.73 62.37 L164.68 62.85 L163.66 63.33 L162.67 63.81 L161.74 64.28 L160.86 64.74 L160.04 65.19 L159.28 65.61 L158.57 66.01 L157.93 66.37 L157.35 66.71 L156.84 67.00 L156.40 67.25 L156.03 67.45 L150.94 67.62 L145.80 77.60 L156.82 75.46 L157.97 70.95 L158.37 70.72 L158.84 70.45 L159.36 70.14 L159.93 69.80 L160.55 69.43 L161.22 69.04 L161.95 68.62 L162.73 68.19 L163.55 67.74 L164.43 67.28 L165.35 66.82 L166.32 66.35 L167.36 65.85 L168.45 65.33 L169.59 64.79 L170.77 64.23 L172.00 63.66 L173.29 63.08 L174.62 62.48 L176.00 61.89 L177.44 61.28 L178.94 60.68 L180.49 60.09 L182.10 59.50 L183.79 58.90 L185.59 58.28 L187.47 57.65 L189.43 57.01 L191.44 56.37 L193.49 55.73 L195.57 55.09 L197.66 54.47 L199.76 53.86 L201.84 53.26 L203.89 52.69 L205.90 52.14 L207.87 51.63 L209.81 51.13 L211.74 50.65 L213.67 50.19 L215.59 49.75 L217.53 49.31 L219.48 48.88 L221.46 48.46 L223.46 48.04 L225.51 47.61 L227.61 47.19 L229.76 46.75 L232.00 46.30 L234.36 45.84 L236.80 45.37 L239.30 44.90 L241.83 44.43 L244.36 43.97 L246.88 43.52 L249.34 43.08 L251.73 42.66 L254.01 42.26 L256.17 41.90 L258.16 41.56 L260.02 41.26 L261.78 40.99 L263.45 40.74 L265.03 40.51 L266.54 40.30 L267.99 40.11 L269.37 39.93 L270.69 39.77 L271.97 39.61 L273.21 39.45 L274.42 39.30 L275.60 39.15 L276.72 39.00 L277.77 38.88 L278.76 38.76 L279.69 38.66 L280.57 38.56 L281.41 38.47 L282.23 38.39 L283.02 38.30 L283.79 38.21 L284.56 38.11 L285.32 38.01 L286.10 37.89 L286.85 37.76 L287.55 37.63 L288.21 37.50 L288.84 37.36 L289.44 37.21 L290.04 37.07 L290.64 36.93 L291.25 36.79 L291.89 36.65 L292.56 36.51 L293.29 36.38 L294.07 36.25 L294.96 36.11 L295.96 35.98 L297.05 35.84 L298.19 35.69 L299.37 35.55 L300.54 35.41 L301.68 35.27 L302.77 35.13 L303.78 35.00 L304.67 34.88 L305.43 34.77 L306.01 34.65 Z"/>
+    <path d="M420.99 35.75 L421.53 35.83 L422.22 35.89 L423.04 35.95 L423.95 36.02 L424.94 36.08 L425.99 36.14 L427.06 36.21 L428.13 36.28 L429.18 36.36 L430.18 36.44 L431.11 36.53 L431.94 36.63 L432.71 36.73 L433.44 36.85 L434.16 36.99 L434.85 37.13 L435.53 37.28 L436.18 37.43 L436.82 37.59 L437.45 37.74 L438.07 37.88 L438.69 38.03 L439.29 38.15 L439.89 38.27 L440.47 38.37 L441.03 38.47 L441.58 38.55 L442.11 38.63 L442.63 38.70 L443.13 38.77 L443.62 38.84 L444.10 38.90 L444.56 38.96 L445.01 39.03 L445.45 39.10 L445.88 39.17 L446.22 39.22 L446.38 39.26 L446.38 39.26 L446.25 39.20 L446.34 39.25 L446.53 39.33 L446.72 39.38 L447.02 39.45 L447.48 39.53 L448.16 39.66 L449.11 39.82 L450.38 40.03 L451.99 40.29 L453.90 40.58 L456.09 40.90 L458.49 41.25 L461.06 41.62 L463.77 42.02 L466.56 42.44 L469.40 42.88 L472.23 43.34 L475.02 43.81 L477.72 44.29 L480.28 44.78 L482.77 45.28 L485.25 45.80 L487.74 46.33 L490.23 46.88 L492.71 47.45 L495.20 48.03 L497.68 48.63 L500.17 49.25 L502.65 49.89 L505.13 50.55 L507.61 51.24 L510.09 51.94 L512.65 52.70 L515.32 53.53 L518.08 54.41 L520.88 55.33 L523.68 56.28 L526.44 57.22 L529.13 58.16 L531.69 59.06 L534.08 59.92 L536.28 60.72 L538.23 61.43 L539.89 62.05 L541.21 62.56 L542.22 62.98 L542.96 63.31 L543.46 63.57 L543.77 63.75 L543.95 63.89 L544.09 64.01 L544.28 64.19 L544.57 64.45 L544.97 64.77 L545.49 65.12 L546.11 65.49 L546.83 65.89 L547.61 66.32 L548.45 66.78 L549.32 67.26 L550.22 67.76 L551.12 68.26 L551.99 68.74 L552.82 69.20 L553.58 69.62 L554.26 70.00 L554.84 70.32 L555.29 70.57 L553.51 73.48 L564.00 76.00 L560.51 65.79 L557.11 67.23 L556.65 66.99 L556.07 66.68 L555.38 66.31 L554.61 65.90 L553.78 65.45 L552.90 64.98 L551.99 64.50 L551.09 64.02 L550.20 63.54 L549.36 63.09 L548.57 62.67 L547.89 62.31 L547.39 62.03 L547.09 61.83 L546.90 61.69 L546.73 61.53 L546.49 61.31 L546.15 61.03 L545.70 60.72 L545.15 60.40 L544.47 60.07 L543.60 59.69 L542.50 59.26 L541.11 58.75 L539.42 58.15 L537.44 57.45 L535.22 56.69 L532.79 55.86 L530.21 55.00 L527.49 54.10 L524.70 53.20 L521.86 52.30 L519.02 51.42 L516.22 50.57 L513.50 49.78 L510.91 49.06 L508.39 48.39 L505.87 47.74 L503.35 47.12 L500.83 46.52 L498.32 45.94 L495.80 45.38 L493.29 44.85 L490.77 44.33 L488.26 43.83 L485.75 43.34 L483.23 42.87 L480.72 42.42 L478.12 41.98 L475.39 41.55 L472.57 41.14 L469.71 40.75 L466.85 40.37 L464.04 40.01 L461.32 39.68 L458.74 39.37 L456.33 39.08 L454.14 38.82 L452.23 38.58 L450.62 38.37 L449.36 38.19 L448.42 38.06 L447.75 37.96 L447.31 37.89 L447.06 37.84 L446.97 37.82 L447.04 37.85 L447.08 37.87 L446.88 37.77 L446.70 37.73 L446.48 37.69 L446.12 37.63 L445.67 37.58 L445.21 37.52 L444.75 37.47 L444.27 37.42 L443.80 37.37 L443.31 37.32 L442.81 37.26 L442.29 37.21 L441.77 37.15 L441.23 37.08 L440.68 37.01 L440.11 36.93 L439.54 36.84 L438.95 36.73 L438.35 36.62 L437.73 36.49 L437.10 36.36 L436.44 36.23 L435.77 36.10 L435.07 35.97 L434.36 35.85 L433.62 35.75 L432.85 35.65 L432.06 35.57 L431.20 35.51 L430.25 35.46 L429.23 35.43 L428.17 35.40 L427.09 35.38 L426.01 35.37 L424.97 35.37 L423.97 35.37 L423.06 35.38 L422.24 35.39 L421.55 35.41 L421.01 35.45 Z"/>
     <path transform="translate(0.25 0.5)" d="M359.60 74.80 L359.60 75.05 L359.59 75.38 L359.59 75.76 L359.59 76.19 L359.58 76.65 L359.58 77.14 L359.57 77.64 L359.56 78.15 L359.56 78.65 L359.55 79.13 L359.55 79.59 L359.54 80.00 L359.54 80.40 L359.54 80.81 L359.53 81.22 L359.53 81.63 L359.52 82.03 L359.52 82.42 L359.51 82.80 L359.51 83.15 L359.51 83.47 L359.50 83.75 L359.50 84.00 L359.50 84.20 L356.00 83.80 L361.20 92.20 L366.40 83.80 L362.90 84.20 L362.90 84.00 L362.90 83.75 L362.89 83.47 L362.89 83.15 L362.89 82.80 L362.88 82.42 L362.88 82.03 L362.87 81.63 L362.87 81.22 L362.86 80.81 L362.86 80.40 L362.86 80.00 L362.85 79.59 L362.85 79.13 L362.84 78.65 L362.84 78.15 L362.83 77.64 L362.82 77.14 L362.82 76.65 L362.81 76.19 L362.81 75.76 L362.81 75.38 L362.80 75.05 L362.80 74.80 Z"/>
   </g>
 
   <!-- illustrations -->
-  <!--@include bowl-->
   <!--@include gut-->
   <!--@include vessel-->
   <!--@include heart-->
@@ -81,66 +88,79 @@
   <!--@include mouse_pagly-->
 
   <!-- dashed proposed links -->
-  <g id="dashedA" stroke="#6b6e76" fill="none" stroke-width="2.2">
-    <path d="M171.5 118.9 H 262.5" stroke-dasharray="6 3.55"/>
-    <path d="M221.25 124.6 V 183.2" stroke-dasharray="4.6 3.4"/>
-    <path d="M446.75 118.9 H 547" stroke-dasharray="6 4"/>
-    <path d="M498.75 124.6 V 183.2" stroke-dasharray="4.6 3.4"/>
+  <g id="dashedA" stroke="#74767c" fill="none" stroke-width="2.2">
+    <path d="M170.6 119 H177.4 M180.6 119 H187.4 M190.6 119 H196.4 M199.6 119 H206.4 M209.6 119 H215.4 M217.6 119 H225.4 M227.6 119 H234.4 M237.6 119 H244.4 M246.6 119 H252.4 M255.6 119 H261.4"/>
+    <path d="M221.25 124.6 V130.4 M221.25 132.6 V138.4 M221.25 140.6 V146.4 M221.25 148.6 V153.4 M221.25 155.6 V161.4 M221.25 163.6 V169.4 M221.25 171.6 V177.4 M221.25 179.6 V183.4"/>
+    <path d="M445.6 119 H453.4 M456.6 119 H462.4 M465.6 119 H472.4 M475.6 119 H482.4 M485.6 119 H492.4 M505.6 119 H511.4 M514.6 119 H520.4 M523.6 119 H529.4 M531.6 119 H537.4 M540.6 119 H545.4"/>
+    <path d="M498.75 124.6 V130.4 M498.75 132.6 V138.4 M498.75 140.6 V146.4 M498.75 148.6 V153.4 M498.75 155.6 V161.4 M498.75 163.6 V169.4 M498.75 171.6 V177.4 M498.75 179.6 V183.4"/>
   </g>
-  <g fill="#6b6e76">
-    <circle cx="221" cy="118.9" r="3.4"/>
-    <circle cx="498.6" cy="118.9" r="3.4"/>
-    <path d="M262.6 114 L 272.4 118.9 L 262.6 123.8 Z"/>
-    <path d="M546.6 114 L 556.4 118.9 L 546.6 123.8 Z"/>
+  <g fill="#6b7888">
+    <circle cx="221" cy="119" r="3.4"/>
+    <circle cx="498.6" cy="119" r="3.4"/>
+    <path d="M262.8 114.2 L 272.4 119 L 262.8 123.8 Z"/>
+    <path d="M547.8 114.1 L 557.6 119 L 547.8 123.9 Z"/>
   </g>
-  <text data-k="plink" x="221.53" y="111.6" font-size="10.6" font-weight="700" fill="#101b3c" text-anchor="middle" textLength="58.67" lengthAdjust="spacingAndGlyphs">Proposed link</text>
-  <text data-k="pcontr" x="498.51" y="112" font-size="10.6" font-weight="700" fill="#101b3c" text-anchor="middle" textLength="90.55" lengthAdjust="spacingAndGlyphs">Proposed contribution</text>
+  <text data-k="plink" x="221.53" y="110.85" font-size="10.6" font-weight="800" fill="#07102f" text-anchor="middle" textLength="58.67" lengthAdjust="spacingAndGlyphs">Proposed link</text>
+  <text data-k="pcontr" x="498.51" y="111.4" font-size="10.6" font-weight="800" fill="#07102f" text-anchor="middle" textLength="90.55" lengthAdjust="spacingAndGlyphs">Proposed contribution</text>
 
   <!-- LGZGD label -->
   <g filter="url(#softShadow)">
-    <rect x="291" y="45.3" width="143" height="27.2" rx="3.5" fill="url(#lblFill)" stroke="#b3c6d8" stroke-width="0.9"/>
+    <rect x="291" y="45.3" width="142" height="27.2" rx="3.5" fill="url(#lblFill)" stroke="#96aec0" stroke-width="0.9"/>
   </g>
-  <text data-k="lg1" x="362.64" y="58.6" font-size="12.4" font-weight="700" fill="#0b163a" text-anchor="middle" textLength="121.56" lengthAdjust="spacingAndGlyphs">Linggui Zhugan Decoction</text>
-  <text data-k="lg2" x="362.1" y="70.2" font-size="12.4" font-weight="700" fill="#0b163a" text-anchor="middle" textLength="42.62" lengthAdjust="spacingAndGlyphs">(LGZGD)</text>
+  <!--@include bowl-->
+  <text data-k="lg1_0" x="301.6" y="58.3" font-size="12.4" font-weight="800" fill="#07102f" textLength="35.8" lengthAdjust="spacingAndGlyphs">Linggui</text>
+  <text data-k="lg1_1" x="339.6" y="58.3" font-size="12.4" font-weight="800" fill="#07102f" textLength="34.8" lengthAdjust="spacingAndGlyphs">Zhugan</text>
+  <text data-k="lg1_2" x="376.6" y="58.3" font-size="12.4" font-weight="800" fill="#07102f" textLength="46.8" lengthAdjust="spacingAndGlyphs">Decoction</text>
+  <text data-k="lg2" x="362.1" y="69.2" font-size="12.4" font-weight="800" fill="#07102f" text-anchor="middle" textLength="42.62" lengthAdjust="spacingAndGlyphs">(LGZGD)</text>
 
   <!-- gut label -->
   <g filter="url(#softShadow)">
-    <rect x="12.5" y="148" width="157" height="28.5" rx="3.5" fill="url(#lblFill)" stroke="#bccddd" stroke-width="0.9"/>
+    <rect x="12.5" y="148" width="156" height="28.5" rx="3.5" fill="url(#lblFill)" stroke="#afc3d4" stroke-width="0.9"/>
   </g>
-  <text data-k="gut1" x="92" y="161.8" font-size="12.9" font-weight="700" fill="#0d1838" text-anchor="middle" textLength="116.25" lengthAdjust="spacingAndGlyphs">Altered gut microbiota</text>
-  <text data-k="gut2" x="91.5" y="173.6" font-size="12.9" font-weight="700" fill="#0d1838" text-anchor="middle" textLength="66.11" lengthAdjust="spacingAndGlyphs">composition</text>
+  <text data-k="gut1a" x="34.58" y="161" font-size="12.9" font-weight="800" fill="#07102f" textLength="37.61" lengthAdjust="spacingAndGlyphs">Altered</text>
+  <text data-k="gut1b" x="74.6" y="161" font-size="12.9" font-weight="800" fill="#07102f" textLength="75.8" lengthAdjust="spacingAndGlyphs">gut microbiota</text>
+  <text data-k="gut2" x="91.99" y="173.1" font-size="12.9" font-weight="800" fill="#07102f" text-anchor="middle" textLength="65.11" lengthAdjust="spacingAndGlyphs">composition</text>
 
   <!-- vessel label -->
   <g filter="url(#softShadow)">
-    <rect x="280.5" y="148.2" width="161" height="19.6" rx="3.5" fill="url(#lblFill)" stroke="#bccddd" stroke-width="0.9"/>
+    <rect x="280.5" y="148.2" width="161" height="19.6" rx="3.5" fill="url(#lblFill)" stroke="#afc3d4" stroke-width="0.9"/>
   </g>
-  <text data-k="vess" x="362.55" y="162" font-size="12.9" font-weight="700" fill="#0d1838" text-anchor="middle" textLength="117.25" lengthAdjust="spacingAndGlyphs">Lower circulating PAGly</text>
+  <text data-k="vessa" x="303.6" y="162" font-size="12.9" font-weight="800" fill="#07102f" textLength="84.6" lengthAdjust="spacingAndGlyphs">Lower circulating</text>
+  <text data-k="vessb" x="390.6" y="162" font-size="12.9" font-weight="800" fill="#07102f" textLength="30.6" lengthAdjust="spacingAndGlyphs">PAGly</text>
 
   <!-- heart label -->
   <g filter="url(#softShadow)">
-    <rect x="538.5" y="148.2" width="176.5" height="27.3" rx="3.5" fill="url(#lblFill)" stroke="#bccddd" stroke-width="0.9"/>
+    <rect x="538.5" y="148.2" width="176.5" height="27.3" rx="3.5" fill="url(#lblFill)" stroke="#afc3d4" stroke-width="0.9"/>
   </g>
-  <text data-k="heart1" x="625.5" y="160.8" font-size="12.9" font-weight="700" fill="#0d1838" text-anchor="middle" textLength="124.65" lengthAdjust="spacingAndGlyphs">Improved systolic function</text>
-  <text data-k="heart2" font-weight="500" x="626.97" y="172.2" font-size="9.7" fill="#44506d" text-anchor="middle" textLength="164.94" lengthAdjust="spacingAndGlyphs">Reduced collagen deposition in ISO-treated mice</text>
+  <text data-k="heart1a" x="563.6" y="160.8" font-size="12.9" font-weight="800" fill="#07102f" textLength="44.8" lengthAdjust="spacingAndGlyphs">Improved</text>
+  <text data-k="heart1b" x="611.61" y="160.8" font-size="12.9" font-weight="800" fill="#07102f" textLength="35.58" lengthAdjust="spacingAndGlyphs">systolic</text>
+  <text data-k="heart1c" x="650.58" y="160.8" font-size="12.9" font-weight="800" fill="#07102f" textLength="37.61" lengthAdjust="spacingAndGlyphs">function</text>
+  <text data-k="heart2_0" x="544.6" font-weight="600" y="172.2" font-size="9.7" fill="#2e3a57" textLength="60.8" lengthAdjust="spacingAndGlyphs">Reduced collagen</text>
+  <text data-k="heart2_1" x="607.6" font-weight="600" y="172.2" font-size="9.7" fill="#2e3a57" textLength="101.8" lengthAdjust="spacingAndGlyphs">deposition in ISO-treated mice</text>
 
   <!-- FMT box -->
   <g filter="url(#softShadow)">
     <rect x="169.5" y="189.3" width="160.5" height="31" rx="3" fill="url(#boxFill)" stroke="#b5c5d7" stroke-width="0.9"/>
   </g>
-  <text data-k="fmt1" font-weight="500" x="178" y="203.2" font-size="10.5" fill="#2f3a55" textLength="139.54" lengthAdjust="spacingAndGlyphs"><tspan font-weight="700" fill="#0d1838">FMT:</tspan> donor fecal contents transfer</text>
-  <text data-k="fmt2" font-weight="500" x="178" y="214.4" font-size="10.5" fill="#2f3a55" textLength="120.73" lengthAdjust="spacingAndGlyphs">different cardiac phenotypes</text>
+  <text data-k="fmt1a" x="177.6" y="202.7" font-size="11.8" font-weight="800" fill="#07102f" textLength="24.4" lengthAdjust="spacingAndGlyphs">FMT:</text>
+  <text data-k="fmt1b" x="203.6" y="202.7" font-size="10.5" font-weight="600" fill="#1f2946" textLength="114.6" lengthAdjust="spacingAndGlyphs">donor fecal contents transfer</text>
+  <text data-k="fmt2" font-weight="600" x="178" y="214.4" font-size="10.5" fill="#1f2946" textLength="120.73" lengthAdjust="spacingAndGlyphs">different cardiac phenotypes</text>
 
   <!-- PAGly exposure box -->
   <g filter="url(#softShadow)">
-    <rect x="475.5" y="189.3" width="170.5" height="31.5" rx="3" fill="url(#boxFill)" stroke="#b5c5d7" stroke-width="0.9"/>
+    <rect x="475.5" y="189.3" width="164" height="31.5" rx="4.2" fill="url(#boxFill)" stroke="#b5c5d7" stroke-width="0.9"/>
   </g>
-  <text data-k="pex1" x="483.01" y="203.2" font-size="10.7" font-weight="700" fill="#0d1838" textLength="74.06" lengthAdjust="spacingAndGlyphs">PAGly exposure:</text>
-  <text data-k="pex2" font-weight="500" x="482" y="214.6" font-size="10.7" fill="#2f3a55" textLength="149.84" lengthAdjust="spacingAndGlyphs">Cardiac dysfunction at tested doses</text>
+  <text data-k="pex1" x="483.01" y="202.5" font-size="10.7" font-weight="800" fill="#07102f" textLength="74.06" lengthAdjust="spacingAndGlyphs">PAGly exposure:</text>
+  <text data-k="pex2_0" x="481.6" font-weight="600" y="214.6" font-size="10.7" fill="#1e2a47" textLength="32.8" lengthAdjust="spacingAndGlyphs">Cardiac</text>
+  <text data-k="pex2_1" x="516.6" font-weight="600" y="214.6" font-size="10.7" fill="#1e2a47" textLength="50.8" lengthAdjust="spacingAndGlyphs">dysfunction</text>
+  <text data-k="pex2_2" x="569.6" font-weight="600" y="214.6" font-size="10.7" fill="#1e2a47" textLength="7.8" lengthAdjust="spacingAndGlyphs">at</text>
+  <text data-k="pex2_3" x="579.6" font-weight="600" y="214.6" font-size="10.7" fill="#1e2a47" textLength="25.8" lengthAdjust="spacingAndGlyphs">tested</text>
+  <text data-k="pex2_4" x="607.6" font-weight="600" y="214.6" font-size="10.7" fill="#1e2a47" textLength="24.8" lengthAdjust="spacingAndGlyphs">doses</text>
 </g>
 
 <!-- separator -->
-<line x1="2" y1="229.9" x2="722" y2="229.9" stroke="#d3ebf2" stroke-width="3.6" opacity="0.8"/>
-<line x1="2" y1="229.9" x2="722" y2="229.9" stroke="url(#sepLine)" stroke-width="1.2"/>
+<line x1="1" y1="231.4" x2="722" y2="231.4" stroke="#d3ebf2" stroke-width="3.2" opacity="0.35"/>
+<line x1="1" y1="231.4" x2="722" y2="231.4" stroke="#7d9199" stroke-width="1.05"/>
 
 <!-- ============================ PANEL B ============================ -->
 <g id="panelB">
@@ -148,22 +168,26 @@
 
   <!-- header -->
   <g id="hdrB" filter="url(#softShadow)">
-    <rect x="4" y="236.5" width="314" height="25" rx="4" fill="url(#hdrFill)" stroke="#a6c6de" stroke-width="0.9"/>
-    <path d="M8 236.95 H32 V261.05 H8 A3.55 3.55 0 0 1 4.45 257.5 V240.5 A3.55 3.55 0 0 1 8 236.95 Z" fill="url(#hdrTag)"/>
-    <line x1="32" y1="237" x2="32" y2="261" stroke="#9cc0dc" stroke-width="0.6"/>
+    <rect x="3.5" y="237.9" width="314.4" height="22.7" rx="4" fill="url(#hdrFill)" stroke="#86a0b4" stroke-width="1"/>
+    <path d="M7.60 238.40 H31.50 V260.10 H7.60 A3.6 3.6 0 0 1 4.00 256.50 V242.00 A3.6 3.6 0 0 1 7.60 238.40 Z" fill="url(#hdrTag)"/>
+    <line x1="31.5" y1="238.4" x2="31.5" y2="260.1" stroke="#86a8c4" stroke-width="0.7"/>
   </g>
   <text data-k="B" x="18.4" y="255.6" font-size="19.6" font-weight="700" fill="#0b1f45" text-anchor="middle">B</text>
-  <text data-k="hdrB" x="40.4" y="254.7" font-size="15.6" font-weight="700" fill="#0d1838" textLength="272.47" lengthAdjust="spacingAndGlyphs"><tspan font-style="italic">In vitro</tspan> signaling under acute ISO stimulation</text>
+  <text data-k="hdrBi" x="40" y="254.7" font-size="15.6" font-weight="800" fill="#07102f" font-style="italic" textLength="46.5" lengthAdjust="spacingAndGlyphs">In vitro</text>
+  <text data-k="hdrBr_0" x="89.71" y="254.7" font-size="15.6" font-weight="800" fill="#07102f" textLength="54.71" lengthAdjust="spacingAndGlyphs">signaling</text>
+  <text data-k="hdrBr_1" x="148.61" y="254.7" font-size="15.6" font-weight="800" fill="#07102f" textLength="35.81" lengthAdjust="spacingAndGlyphs">under</text>
+  <text data-k="hdrBr_2" x="187.6" y="254.7" font-size="15.6" font-weight="800" fill="#07102f" textLength="32.8" lengthAdjust="spacingAndGlyphs">acute</text>
+  <text data-k="hdrBr_3" x="223.6" y="254.7" font-size="15.6" font-weight="800" fill="#07102f" textLength="20.8" lengthAdjust="spacingAndGlyphs">ISO</text>
+  <text data-k="hdrBr_4" x="247.6" y="254.7" font-size="15.6" font-weight="800" fill="#07102f" textLength="64.8" lengthAdjust="spacingAndGlyphs">stimulation</text>
 
   <!-- ISO ligand + receptor -->
   <text data-k="ISO" x="26" y="279.4" font-size="11.8" font-weight="700" fill="#0d1838">ISO</text>
-  <g>
-    <circle cx="59" cy="268.4" r="4.4" fill="url(#molRed)"/>
-    <circle cx="51" cy="276" r="4.5" fill="url(#molRed)"/>
-    <circle cx="60.2" cy="282.6" r="4.5" fill="url(#molRed)"/>
+  <g stroke="#a04c58" stroke-width="0.8">
+    <circle cx="59.3" cy="270" r="4.6" fill="url(#molRed)"/>
+    <circle cx="51.5" cy="279" r="4.6" fill="url(#molRed)"/>
+    <circle cx="61" cy="284.8" r="4.5" fill="url(#molRed)"/>
   </g>
-  <path transform="translate(0.25 0.75)" d="M66.8 274 C 72 278.2, 80 282.2, 92 283.6" fill="none" stroke="#1d2645" stroke-width="2" stroke-linecap="round"/>
-  <path transform="translate(0.25 0.75)" d="M90.6 279.2 L 100.2 284 L 90.4 288.4 Z" fill="#1d2645"/>
+  <path d="M66.18 274.19 L66.43 274.40 L66.73 274.67 L67.08 274.99 L67.48 275.35 L67.91 275.74 L68.38 276.16 L68.88 276.59 L69.40 277.03 L69.94 277.47 L70.50 277.90 L71.07 278.31 L71.64 278.69 L72.21 279.05 L72.79 279.42 L73.38 279.78 L74.00 280.15 L74.64 280.51 L75.29 280.87 L75.97 281.23 L76.67 281.57 L77.40 281.90 L78.15 282.22 L78.93 282.52 L79.73 282.80 L80.61 283.07 L81.58 283.32 L82.60 283.55 L83.67 283.78 L84.76 283.99 L85.84 284.19 L86.88 284.37 L87.88 284.53 L88.79 284.68 L89.60 284.82 L90.28 284.94 L90.80 285.03 L91.00 288.50 L98.60 283.80 L91.00 279.10 L91.20 282.57 L90.64 282.49 L89.94 282.41 L89.12 282.32 L88.20 282.22 L87.21 282.11 L86.16 281.99 L85.10 281.86 L84.03 281.71 L82.99 281.55 L82.00 281.38 L81.08 281.20 L80.27 281.00 L79.51 280.78 L78.78 280.54 L78.06 280.29 L77.36 280.01 L76.68 279.73 L76.02 279.43 L75.37 279.12 L74.74 278.80 L74.12 278.48 L73.52 278.15 L72.93 277.83 L72.36 277.51 L71.81 277.18 L71.25 276.83 L70.70 276.45 L70.16 276.06 L69.63 275.66 L69.12 275.27 L68.64 274.88 L68.19 274.52 L67.78 274.18 L67.41 273.88 L67.08 273.62 L66.82 273.41 Z" fill="#1d2645"/>
   <text data-k="b2ar" x="107" y="276.7" font-size="12.6" font-weight="700" fill="#0d1838" textLength="27.6" lengthAdjust="spacingAndGlyphs">β2AR</text>
   <!--@include receptor-->
 
@@ -171,8 +195,8 @@
   <path transform="translate(0 1)" d="M149.5 307.6 C 168 315.2, 190 319.8, 224 320.1" fill="none" stroke="#1d2645" stroke-width="2" stroke-linecap="round"/>
   <path transform="translate(0 1)" d="M222.4 315.6 L 232.4 320.2 L 222.4 324.8 Z" fill="#1d2645"/>
 
-  <text data-k="ac1" font-weight="500" x="49" y="336" font-size="10.3" fill="#7b4c94" textLength="86.39" lengthAdjust="spacingAndGlyphs">AC16 cells &amp; primary</text>
-  <text data-k="ac2" font-weight="500" x="48.99" y="346" font-size="10.3" fill="#7b4c94" textLength="97.5" lengthAdjust="spacingAndGlyphs">mouse cardiomyocytes</text>
+  <text data-k="ac1" font-weight="500" x="49" y="336" font-size="10.3" fill="#74508a" textLength="86.39" lengthAdjust="spacingAndGlyphs">AC16 cells &amp; primary</text>
+  <text data-k="ac2" font-weight="500" x="48.99" y="346" font-size="10.3" fill="#74508a" textLength="97.5" lengthAdjust="spacingAndGlyphs">mouse cardiomyocytes</text>
 
   <!-- signaling boxes -->
   <g filter="url(#softShadow)">
@@ -180,58 +204,70 @@
     <rect x="402" y="307.2" width="110" height="26.3" rx="4.5" fill="url(#sigFill)" stroke="#8f7cc0" stroke-width="0.9"/>
   </g>
   <text data-k="camp1" x="280.5" y="319" font-size="11.6" font-weight="700" fill="#15174a" text-anchor="middle" textLength="29.89" lengthAdjust="spacingAndGlyphs">cAMP</text>
-  <text data-k="camp2" x="281.5" y="330.4" font-size="11.6" font-weight="700" fill="#15174a" text-anchor="middle" textLength="65.63" lengthAdjust="spacingAndGlyphs">accumulation</text>
+  <text data-k="camp2" x="281.5" y="329.4" font-size="11.6" font-weight="700" fill="#15174a" text-anchor="middle" textLength="65.63" lengthAdjust="spacingAndGlyphs">accumulation</text>
   <text data-k="pka1" x="455.99" y="319" font-size="11.6" font-weight="700" fill="#15174a" text-anchor="middle" textLength="71.98" lengthAdjust="spacingAndGlyphs">PKA substrate</text>
-  <text data-k="pka2" x="459.01" y="330.4" font-size="11.6" font-weight="700" fill="#15174a" text-anchor="middle" textLength="82.11" lengthAdjust="spacingAndGlyphs">phosphorylation</text>
+  <text data-k="pka2" x="459.01" y="329.6" font-size="11.6" font-weight="700" fill="#15174a" text-anchor="middle" textLength="82.11" lengthAdjust="spacingAndGlyphs">phosphorylation</text>
   <path d="M327.75 320.55 H 390.25" fill="none" stroke="#2c3550" stroke-width="2"/>
   <path d="M389.05 316.45 L 398.05 320.55 L 389.05 324.65 Z" fill="#2c3550"/>
 
   <!-- bracket + caption -->
-  <path d="M232.5 333 Q 232.5 338.6, 237 338.6 H 361 Q 364.4 338.6, 365.2 341.8 Q 366 338.6, 369.4 338.6 H 512.5 Q 517 338.6, 517 333" fill="none" stroke="#2a3048" stroke-width="1.5" stroke-linejoin="round"/>
-  <text data-k="b2sig" x="377.5" y="348.6" font-size="11.8" font-weight="700" fill="#15183e" text-anchor="middle" textLength="123.77" lengthAdjust="spacingAndGlyphs">β2AR-associated signaling</text>
+  <path d="M232.5 333 Q 232.5 338.8, 237 338.8 H 361 Q 364.4 338.8, 365.2 341.8 Q 366 338.8, 369.4 338.8 H 512.5 Q 517 338.8, 517 333" fill="none" stroke="#2a3048" stroke-width="1.9" stroke-linejoin="round"/>
+  <text data-k="b2sig_0" x="315.6" y="349.1" font-size="11.8" font-weight="700" fill="#15183e" textLength="80.8" lengthAdjust="spacingAndGlyphs">β2AR-associated</text>
+  <text data-k="b2sig_1" x="399.61" y="349.1" font-size="11.8" font-weight="700" fill="#15183e" textLength="39.8" lengthAdjust="spacingAndGlyphs">signaling</text>
 
   <!-- ADRB2 knockdown box -->
   <g filter="url(#softShadow)">
     <rect x="246.5" y="351.3" width="247.5" height="26" rx="3" fill="#e5f3fc" stroke="#8a9ab1" stroke-width="0.9"/>
   </g>
-  <text data-k="adrb1" font-weight="500" x="371.19" y="362.6" font-size="10.9" fill="#3d465e" text-anchor="middle" textLength="225.91" lengthAdjust="spacingAndGlyphs"><tspan font-weight="700" font-style="italic" fill="#0f1a3d">ADRB2</tspan> knockdown reduces ISO-stimulated signaling</text>
-  <text data-k="adrb2" font-weight="500" x="377.71" y="373.4" font-size="10.9" fill="#3d465e" text-anchor="middle" textLength="212.74" lengthAdjust="spacingAndGlyphs">and attenuates treatment-associated differences</text>
+  <text data-k="adrb1_0" x="258.58" y="363.7" font-size="10.9" font-weight="700" font-style="italic" fill="#0f1a3d" textLength="34.81" lengthAdjust="spacingAndGlyphs">ADRB2</text>
+  <text data-k="adrb1_1" x="295.6" font-weight="500" y="363.7" font-size="10.9" fill="#3d465e" textLength="50.8" lengthAdjust="spacingAndGlyphs">knockdown</text>
+  <text data-k="adrb1_2" x="349.6" font-weight="500" y="363.7" font-size="10.9" fill="#3d465e" textLength="32.8" lengthAdjust="spacingAndGlyphs">reduces</text>
+  <text data-k="adrb1_3" x="384.6" font-weight="500" y="363.7" font-size="10.9" fill="#3d465e" textLength="62.8" lengthAdjust="spacingAndGlyphs">ISO-stimulated</text>
+  <text data-k="adrb1_4" x="449.61" font-weight="500" y="363.7" font-size="10.9" fill="#3d465e" textLength="33.81" lengthAdjust="spacingAndGlyphs">signaling</text>
+  <text data-k="adrb2_0" x="271.6" font-weight="500" y="374.4" font-size="10.9" fill="#3d465e" textLength="16.8" lengthAdjust="spacingAndGlyphs">and</text>
+  <text data-k="adrb2_1" x="290.6" font-weight="500" y="374.4" font-size="10.9" fill="#3d465e" textLength="44.8" lengthAdjust="spacingAndGlyphs">attenuates</text>
+  <text data-k="adrb2_2" x="337.6" font-weight="500" y="374.4" font-size="10.9" fill="#3d465e" textLength="90.8" lengthAdjust="spacingAndGlyphs">treatment-associated</text>
+  <text data-k="adrb2_3" x="430.6" font-weight="500" y="374.4" font-size="10.9" fill="#3d465e" textLength="53.8" lengthAdjust="spacingAndGlyphs">differences</text>
 
   <!-- PAGly inhibition -->
-  <text data-k="paglyL" x="332.92" y="255.6" font-size="12" font-weight="700" fill="#0d1838" textLength="31.34" lengthAdjust="spacingAndGlyphs">PAGly</text>
-  <g>
-    <circle cx="383.2" cy="244" r="4.2" fill="url(#molPurple)"/>
-    <circle cx="375.5" cy="251.2" r="4.1" fill="url(#molPurple)"/>
-    <circle cx="393.8" cy="251.4" r="4.2" fill="url(#molPurple)"/>
-    <circle cx="358.8" cy="261.8" r="4.1" fill="url(#molPurple)"/>
-    <circle cx="370.7" cy="261.4" r="4.1" fill="url(#molPurple)"/>
-    <circle cx="383.8" cy="260.6" r="4.2" fill="url(#molPurple)"/>
+  <text data-k="paglyL" x="332.92" y="253.9" font-size="12" font-weight="700" fill="#0d1838" textLength="31.34" lengthAdjust="spacingAndGlyphs">PAGly</text>
+  <g stroke="#5a3a85" stroke-width="0.75">
+    <circle cx="384.2" cy="244" r="3.9" fill="url(#molPurple)"/>
+    <circle cx="375.5" cy="251.2" r="3.8" fill="url(#molPurple)"/>
+    <circle cx="393.8" cy="251.4" r="3.9" fill="url(#molPurple)"/>
+    <circle cx="358.8" cy="261.8" r="3.8" fill="url(#molPurple)"/>
+    <circle cx="370.7" cy="261.4" r="3.8" fill="url(#molPurple)"/>
+    <circle cx="383.8" cy="260.6" r="3.9" fill="url(#molPurple)"/>
   </g>
   <path d="M369.6 266.5 V 279" stroke="#c13c3f" stroke-width="2.6"/>
-  <text data-k="sup1" x="383.5" y="289.2" font-size="11.4" font-weight="700" fill="#c94a4e" text-anchor="middle" textLength="134.52" lengthAdjust="spacingAndGlyphs">Suppresses ISO-stimulated</text>
-  <text data-k="sup2" x="382.5" y="299.8" font-size="11.4" font-weight="700" fill="#c94a4e" text-anchor="middle" textLength="101.29" lengthAdjust="spacingAndGlyphs">cAMP–PKA signaling</text>
+  <text data-k="sup1" x="383.5" y="289.2" font-size="11.4" font-weight="700" fill="#b6383e" text-anchor="middle" textLength="134.52" lengthAdjust="spacingAndGlyphs">Suppresses ISO-stimulated</text>
+  <text data-k="sup2" x="382.5" y="299.8" font-size="11.4" font-weight="700" fill="#b6383e" text-anchor="middle" textLength="101.29" lengthAdjust="spacingAndGlyphs">cAMP–PKA signaling</text>
   <path d="M370.1 303 V 311.5" stroke="#c13c3f" stroke-width="2.6"/>
   <path d="M358.1 311.8 H 381.1" stroke="#c13c3f" stroke-width="2.8"/>
 
   <!-- LGZGD-medicated serum -->
   <!--@include tube-->
-  <text data-k="serum" x="524.05" y="256.6" font-size="12" font-weight="700" fill="#0d1838" textLength="123.45" lengthAdjust="spacingAndGlyphs">LGZGD-medicated serum</text>
+  <text data-k="serum1" x="524.6" y="257" font-size="12" font-weight="800" fill="#07102f" textLength="88.6" lengthAdjust="spacingAndGlyphs">LGZGD-medicated</text>
+  <text data-k="serum2" x="615.6" y="257" font-size="12" font-weight="800" fill="#07102f" textLength="31.6" lengthAdjust="spacingAndGlyphs">serum</text>
   <g filter="url(#glow)">
-    <path d="M498.80 251.94 L498.45 252.09 L498.01 252.26 L497.47 252.46 L496.87 252.70 L496.20 252.96 L495.49 253.24 L494.75 253.54 L494.00 253.85 L493.24 254.19 L492.49 254.54 L491.76 254.90 L491.07 255.27 L490.42 255.65 L489.78 256.04 L489.15 256.44 L488.52 256.86 L487.90 257.29 L487.29 257.73 L486.68 258.17 L486.08 258.63 L485.49 259.09 L484.90 259.56 L484.31 260.03 L483.74 260.51 L483.15 260.99 L482.57 261.50 L481.99 262.01 L481.41 262.53 L480.84 263.06 L480.28 263.60 L479.72 264.14 L479.17 264.68 L478.64 265.22 L478.11 265.76 L477.60 266.29 L477.10 266.82 L476.61 267.34 L476.13 267.87 L475.67 268.39 L475.21 268.92 L474.76 269.44 L474.32 269.97 L473.89 270.50 L473.47 271.03 L473.05 271.56 L472.65 272.11 L472.25 272.65 L471.86 273.20 L471.47 273.75 L471.10 274.31 L470.73 274.87 L470.37 275.43 L470.02 276.00 L469.68 276.57 L469.34 277.15 L469.01 277.73 L468.70 278.31 L468.39 278.90 L468.10 279.49 L467.81 280.10 L467.53 280.72 L467.26 281.36 L467.00 282.01 L466.76 282.66 L466.53 283.30 L466.31 283.94 L466.10 284.57 L465.91 285.18 L465.72 285.77 L465.55 286.33 L465.39 286.87 L465.23 287.37 L465.08 287.88 L464.94 288.39 L464.82 288.88 L464.71 289.36 L464.60 289.81 L464.51 290.24 L464.43 290.64 L464.36 291.00 L464.29 291.33 L464.24 291.61 L464.19 291.84 L464.15 292.03 L458.95 290.79 L465.40 301.20 L474.05 292.53 L468.65 292.97 L468.70 292.74 L468.75 292.47 L468.80 292.17 L468.86 291.85 L468.92 291.50 L468.99 291.14 L469.06 290.75 L469.15 290.35 L469.24 289.93 L469.34 289.51 L469.45 289.07 L469.57 288.63 L469.71 288.14 L469.86 287.61 L470.02 287.06 L470.18 286.49 L470.36 285.91 L470.54 285.32 L470.73 284.73 L470.93 284.14 L471.13 283.55 L471.35 282.98 L471.57 282.43 L471.79 281.90 L472.03 281.37 L472.29 280.84 L472.55 280.31 L472.82 279.78 L473.11 279.26 L473.40 278.73 L473.70 278.20 L474.01 277.68 L474.33 277.16 L474.66 276.64 L475.00 276.12 L475.34 275.60 L475.69 275.09 L476.05 274.58 L476.41 274.08 L476.78 273.58 L477.16 273.08 L477.55 272.58 L477.95 272.09 L478.36 271.59 L478.78 271.09 L479.21 270.59 L479.65 270.09 L480.10 269.58 L480.57 269.07 L481.05 268.55 L481.54 268.03 L482.04 267.51 L482.55 266.98 L483.07 266.46 L483.60 265.95 L484.13 265.44 L484.66 264.93 L485.19 264.44 L485.73 263.96 L486.26 263.49 L486.81 263.03 L487.35 262.57 L487.91 262.12 L488.46 261.67 L489.01 261.24 L489.57 260.81 L490.13 260.39 L490.69 259.99 L491.25 259.60 L491.81 259.23 L492.38 258.87 L492.93 258.53 L493.51 258.20 L494.13 257.88 L494.80 257.56 L495.49 257.24 L496.19 256.93 L496.88 256.63 L497.56 256.34 L498.21 256.08 L498.81 255.84 L499.35 255.62 L499.82 255.42 L500.20 255.26 Z" fill="#1c9ba8"/>
+    <path d="M499.02 253.67 L498.63 253.77 L498.17 253.94 L497.62 254.16 L497.02 254.41 L496.36 254.69 L495.66 255.00 L494.94 255.32 L494.20 255.67 L493.46 256.02 L492.74 256.38 L492.04 256.75 L491.39 257.12 L490.76 257.48 L490.14 257.86 L489.52 258.24 L488.90 258.63 L488.28 259.03 L487.67 259.44 L487.06 259.86 L486.45 260.29 L485.85 260.73 L485.25 261.17 L484.65 261.62 L484.06 262.09 L483.47 262.56 L482.88 263.05 L482.30 263.56 L481.71 264.07 L481.14 264.59 L480.56 265.11 L480.00 265.64 L479.45 266.16 L478.91 266.69 L478.37 267.21 L477.86 267.73 L477.35 268.24 L476.86 268.74 L476.38 269.24 L475.91 269.74 L475.45 270.23 L475.00 270.73 L474.56 271.23 L474.12 271.73 L473.69 272.23 L473.27 272.74 L472.86 273.26 L472.45 273.78 L472.06 274.30 L471.67 274.84 L471.28 275.37 L470.91 275.92 L470.54 276.46 L470.18 277.01 L469.83 277.57 L469.50 278.12 L469.17 278.68 L468.85 279.23 L468.54 279.79 L468.24 280.35 L467.95 280.91 L467.66 281.47 L467.39 282.05 L467.13 282.63 L466.88 283.21 L466.65 283.78 L466.42 284.36 L466.21 284.92 L466.00 285.48 L465.81 286.02 L465.63 286.56 L465.45 287.07 L465.29 287.58 L465.13 288.11 L464.98 288.65 L464.85 289.19 L464.73 289.71 L464.62 290.22 L464.53 290.71 L464.44 291.17 L464.36 291.59 L464.29 291.97 L464.23 292.30 L464.18 292.57 L464.14 292.78 L459.05 292.35 L465.50 302.80 L473.78 293.73 L468.66 293.62 L468.70 293.36 L468.75 293.04 L468.80 292.70 L468.85 292.32 L468.91 291.91 L468.97 291.49 L469.04 291.05 L469.12 290.60 L469.21 290.14 L469.30 289.69 L469.40 289.25 L469.51 288.82 L469.64 288.36 L469.78 287.87 L469.93 287.37 L470.09 286.86 L470.25 286.34 L470.43 285.82 L470.61 285.29 L470.80 284.76 L471.00 284.24 L471.21 283.72 L471.43 283.20 L471.65 282.69 L471.89 282.18 L472.14 281.67 L472.40 281.15 L472.67 280.63 L472.95 280.11 L473.24 279.58 L473.54 279.06 L473.84 278.54 L474.16 278.03 L474.48 277.51 L474.81 277.00 L475.14 276.50 L475.49 276.00 L475.84 275.50 L476.19 275.01 L476.56 274.52 L476.93 274.04 L477.32 273.55 L477.71 273.06 L478.12 272.57 L478.53 272.07 L478.96 271.58 L479.40 271.07 L479.85 270.56 L480.31 270.05 L480.78 269.52 L481.27 268.99 L481.77 268.45 L482.27 267.91 L482.79 267.38 L483.30 266.85 L483.83 266.32 L484.35 265.80 L484.88 265.29 L485.41 264.79 L485.94 264.31 L486.47 263.84 L487.01 263.37 L487.56 262.91 L488.11 262.46 L488.66 262.01 L489.22 261.57 L489.78 261.14 L490.34 260.71 L490.91 260.29 L491.48 259.88 L492.05 259.48 L492.61 259.08 L493.20 258.69 L493.83 258.29 L494.49 257.88 L495.16 257.47 L495.84 257.06 L496.52 256.67 L497.17 256.28 L497.78 255.92 L498.34 255.59 L498.84 255.28 L499.26 255.00 L499.58 254.73 Z" fill="#2b8793"/>
   </g>
-  <text data-k="part1" x="488.08" y="285" font-size="11.4" font-weight="700" fill="#3aaaae" textLength="92.86" lengthAdjust="spacingAndGlyphs">Partially counteracts</text>
-  <text data-k="part2" x="487.98" y="295.6" font-size="11.4" font-weight="700" fill="#3aaaae" textLength="64.03" lengthAdjust="spacingAndGlyphs">PAGly effects</text>
+  <text data-k="part1" filter="url(#textGlow)" x="488.08" y="283.65" font-size="11.4" font-weight="700" fill="#389499" textLength="92.86" lengthAdjust="spacingAndGlyphs">Partially counteracts</text>
+  <text data-k="part2" filter="url(#textGlow)" x="487.98" y="294" font-size="11.4" font-weight="700" fill="#389499" textLength="64.03" lengthAdjust="spacingAndGlyphs">PAGly effects</text>
 
   <!-- footnote -->
-  <text data-k="foot" font-weight="500" x="3.47" y="390.2" font-size="9.9" fill="#4a5466" textLength="360.82" lengthAdjust="spacingAndGlyphs"><tspan font-style="italic">ADRB2</tspan> knockdown supports β2AR involvement; direct PAGly–β2AR binding remains unproven.</text>
+  <text data-k="footi" x="3" y="391.2" font-size="9.9" font-weight="500" font-style="italic" fill="#3c4557" textLength="30.4" lengthAdjust="spacingAndGlyphs">ADRB2</text>
+  <text data-k="footr" x="35" y="391.2" font-size="9.9" font-weight="500" fill="#3c4557" textLength="329.4" lengthAdjust="spacingAndGlyphs">knockdown supports β2AR involvement; direct PAGly–β2AR binding remains unproven.</text>
 
   <!-- legend -->
   <rect x="537.5" y="368.8" width="189.5" height="26.4" rx="2.5" fill="#ffffff" stroke="#b9c1cb" stroke-width="0.9" filter="url(#softShadow)"/>
-  <path transform="translate(1 0)" d="M545 375.6 H 574.5" stroke="#2fa2a8" stroke-width="1.9" fill="none"/>
-  <path transform="translate(1 0)" d="M574 371.8 L 581.4 375.6 L 574 379.4 Z" fill="#2fa2a8"/>
-  <path transform="translate(1 0)" d="M545 387.9 H 574" stroke="#76797f" stroke-width="1.8" fill="none" stroke-dasharray="4.4 2.6"/>
-  <path transform="translate(1 0)" d="M574 384.1 L 581.4 387.9 L 574 391.7 Z" fill="#76797f"/>
-  <text data-k="leg1" font-weight="500" x="587.57" y="379.4" font-size="8.7" fill="#3c4558" textLength="111.42" lengthAdjust="spacingAndGlyphs">Solid: observed intervention effects</text>
-  <text data-k="leg2" font-weight="500" x="587.6" y="390.8" font-size="8.7" fill="#3c4558" textLength="134.05" lengthAdjust="spacingAndGlyphs">Dashed: proposed links / evidence annotations</text>
+  <path d="M545.5 375.8 H 576" stroke="#b9f2f5" stroke-width="4.4" fill="none" opacity="0.7"/>
+  <path d="M545.5 375.8 H 576" stroke="#3f9aa0" stroke-width="2.2" fill="none"/>
+  <path d="M574.6 371.8 L 582.4 375.8 L 574.6 379.8 Z" fill="#3f9aa0"/>
+  <path d="M545.5 387.5 H 574.5" stroke="#76797f" stroke-width="1.8" fill="none" stroke-dasharray="4.2 2.8"/>
+  <path d="M574.4 383.6 L 582.2 387.5 L 574.4 391.4 Z" fill="#76797f"/>
+  <text data-k="leg1" font-weight="500" x="587.57" y="378.9" font-size="8.7" fill="#333c4e" textLength="111.42" lengthAdjust="spacingAndGlyphs">Solid: observed intervention effects</text>
+  <text data-k="leg2_0" x="587.6" font-weight="500" y="390.8" font-size="8.7" fill="#333c4e" textLength="24.8" lengthAdjust="spacingAndGlyphs">Dashed:</text>
+  <text data-k="leg2_1" x="614.6" font-weight="500" y="390.8" font-size="8.7" fill="#333c4e" textLength="107.8" lengthAdjust="spacingAndGlyphs">proposed links / evidence annotations</text>
 </g>
 </svg>
