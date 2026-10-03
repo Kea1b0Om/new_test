@@ -1,0 +1,64 @@
+<g id="receptor">
+<defs>
+<filter id="receptor-glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="0.9"/></filter>
+<filter id="receptor-b03" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="0.3"/></filter>
+<linearGradient id="receptor-cyl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2c7fae"/><stop offset="0.1" stop-color="#5fd2f4"/><stop offset="0.2" stop-color="#78eaff"/><stop offset="0.34" stop-color="#5ad4ff"/><stop offset="0.5" stop-color="#1c9ae2"/><stop offset="0.72" stop-color="#0a7ccc"/><stop offset="0.9" stop-color="#056cb8"/><stop offset="1" stop-color="#0b5c98"/></linearGradient>
+<linearGradient id="receptor-vsh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.18"/><stop offset="0.15" stop-color="#ffffff" stop-opacity="0"/><stop offset="0.85" stop-color="#003a70" stop-opacity="0"/><stop offset="1" stop-color="#003a70" stop-opacity="0.18"/></linearGradient>
+</defs>
+<g filter="url(#receptor-glow)" opacity="0.9">
+<rect x="105.25" y="288.2" width="7.8" height="20.2" rx="3.4" fill="#c4f4ff" stroke="#c4f4ff" stroke-width="2"/>
+<rect x="113.05" y="288.1" width="7.9" height="20" rx="3.4" fill="#c4f4ff" stroke="#c4f4ff" stroke-width="2"/>
+<rect x="120.95" y="287.1" width="8.7" height="20.3" rx="3.4" fill="#c4f4ff" stroke="#c4f4ff" stroke-width="2"/>
+<rect x="129.65" y="286.6" width="9.5" height="20" rx="3.4" fill="#c4f4ff" stroke="#c4f4ff" stroke-width="2"/>
+<rect x="139.15" y="286.2" width="6.35" height="19.3" rx="3.4" fill="#c4f4ff" stroke="#c4f4ff" stroke-width="2"/>
+<path d="M116.9 289 V285.6 A3.4 3.4 0 0 1 123.7 285.6 V289" fill="none" stroke="#cdf8ff" stroke-width="3"/>
+<path d="M126.5 288.5 V283.75 A3.35 3.35 0 0 1 133.2 283.75 V288.5" fill="none" stroke="#cdf8ff" stroke-width="3"/>
+<path d="M136.4 288.5 V284.05 A3.2 3.2 0 0 1 142.8 284.05 V288.5" fill="none" stroke="#cdf8ff" stroke-width="3"/>
+<path d="M108.7 288.2 V285.3 C108.7 283.9 107.9 283.3 106.5 283.1 C104.9 282.9 103.6 282.3 103.6 281.1 C103.6 279.9 104.7 279.2 106.1 279.7" fill="none" stroke="#cdf8ff" stroke-width="3"/>
+<path d="M110.8 311.8 A3.1 3.1 0 1 0 117 311.8 A3.1 3.1 0 1 0 110.8 311.8" fill="none" stroke="#cdf8ff" stroke-width="3"/>
+<path d="M120 311.6 A3.1 3.1 0 1 0 126.2 311.6 A3.1 3.1 0 1 0 120 311.6" fill="none" stroke="#cdf8ff" stroke-width="3"/>
+<path d="M129.3 310.7 A3 3 0 1 0 135.3 310.7 A3 3 0 1 0 129.3 310.7" fill="none" stroke="#cdf8ff" stroke-width="3"/>
+<path d="M138 310.25 A2.75 2.75 0 1 0 143.5 310.25 A2.75 2.75 0 1 0 138 310.25" fill="none" stroke="#cdf8ff" stroke-width="3"/>
+<path d="M139.8 312.7 C138.8 313.8 138.6 316.5 140.8 316.9 C142.9 317.3 143.9 316.1 143.5 312.6" fill="none" stroke="#cdf8ff" stroke-width="3"/>
+</g>
+<circle cx="113.9" cy="311.8" r="3.1" fill="#cff9ff"/>
+<circle cx="123.1" cy="311.6" r="3.1" fill="#cff9ff"/>
+<circle cx="132.3" cy="310.7" r="3" fill="#cff9ff"/>
+<circle cx="140.75" cy="310.25" r="2.75" fill="#cff9ff"/>
+<path d="M116.9 289 V285.6 A3.4 3.4 0 0 1 123.7 285.6 V289 Z" fill="#cff9ff"/>
+<path d="M126.5 288.5 V283.75 A3.35 3.35 0 0 1 133.2 283.75 V288.5 Z" fill="#cff9ff"/>
+<path d="M136.4 288.5 V284.05 A3.2 3.2 0 0 1 142.8 284.05 V288.5 Z" fill="#cff9ff"/>
+<g fill="none" stroke="#28668f" stroke-width="1.5" stroke-linecap="round">
+<path d="M116.9 289 V285.6 A3.4 3.4 0 0 1 123.7 285.6 V289"/>
+<path d="M126.5 288.5 V283.75 A3.35 3.35 0 0 1 133.2 283.75 V288.5"/>
+<path d="M136.4 288.5 V284.05 A3.2 3.2 0 0 1 142.8 284.05 V288.5"/>
+<path d="M108.7 288.2 V285.3 C108.7 283.9 107.9 283.3 106.5 283.1 C104.9 282.9 103.6 282.3 103.6 281.1 C103.6 279.9 104.7 279.2 106.1 279.7"/>
+<path d="M110.8 311.8 A3.1 3.1 0 1 0 117 311.8 A3.1 3.1 0 1 0 110.8 311.8"/>
+<path d="M120 311.6 A3.1 3.1 0 1 0 126.2 311.6 A3.1 3.1 0 1 0 120 311.6"/>
+<path d="M129.3 310.7 A3 3 0 1 0 135.3 310.7 A3 3 0 1 0 129.3 310.7"/>
+<path d="M138 310.25 A2.75 2.75 0 1 0 143.5 310.25 A2.75 2.75 0 1 0 138 310.25"/>
+<path d="M139.8 312.7 C138.8 313.8 138.6 316.5 140.8 316.9 C142.9 317.3 143.9 316.1 143.5 312.6"/>
+</g>
+<defs>
+<linearGradient id="receptor-cyl0" gradientUnits="userSpaceOnUse" x1="105.25" y1="0" x2="113.05" y2="0"><stop offset="0.000" stop-color="#2f8cbc"/><stop offset="0.103" stop-color="#4cbbe8"/><stop offset="0.269" stop-color="#86f0ff"/><stop offset="0.385" stop-color="#48c5f8"/><stop offset="0.551" stop-color="#1e9fe8"/><stop offset="0.744" stop-color="#0b7ecb"/><stop offset="1.000" stop-color="#0863a9"/></linearGradient>
+<linearGradient id="receptor-cyl1" gradientUnits="userSpaceOnUse" x1="113.05" y1="0" x2="120.95" y2="0"><stop offset="0.000" stop-color="#2f8cbc"/><stop offset="0.177" stop-color="#4cbbe8"/><stop offset="0.342" stop-color="#86f0ff"/><stop offset="0.456" stop-color="#48c5f8"/><stop offset="0.620" stop-color="#1e9fe8"/><stop offset="0.747" stop-color="#0b7ecb"/><stop offset="1.000" stop-color="#0863a9"/></linearGradient>
+<linearGradient id="receptor-cyl2" gradientUnits="userSpaceOnUse" x1="120.95" y1="0" x2="129.65" y2="0"><stop offset="0.000" stop-color="#2f8cbc"/><stop offset="0.241" stop-color="#4cbbe8"/><stop offset="0.391" stop-color="#86f0ff"/><stop offset="0.494" stop-color="#48c5f8"/><stop offset="0.644" stop-color="#1e9fe8"/><stop offset="0.770" stop-color="#0b7ecb"/><stop offset="1.000" stop-color="#0863a9"/></linearGradient>
+<linearGradient id="receptor-cyl3" gradientUnits="userSpaceOnUse" x1="129.65" y1="0" x2="139.15" y2="0"><stop offset="0.000" stop-color="#2f8cbc"/><stop offset="0.242" stop-color="#4cbbe8"/><stop offset="0.379" stop-color="#86f0ff"/><stop offset="0.474" stop-color="#48c5f8"/><stop offset="0.611" stop-color="#1e9fe8"/><stop offset="0.789" stop-color="#0b7ecb"/><stop offset="1.000" stop-color="#0863a9"/></linearGradient>
+<linearGradient id="receptor-cyl4" gradientUnits="userSpaceOnUse" x1="139.15" y1="0" x2="145.5" y2="0"><stop offset="0.000" stop-color="#2f8cbc"/><stop offset="0.142" stop-color="#4cbbe8"/><stop offset="0.346" stop-color="#86f0ff"/><stop offset="0.488" stop-color="#48c5f8"/><stop offset="0.693" stop-color="#1e9fe8"/><stop offset="0.713" stop-color="#0b7ecb"/><stop offset="1.000" stop-color="#0863a9"/></linearGradient>
+</defs>
+<rect x="105.25" y="288.2" width="7.8" height="20.2" rx="3.4" fill="url(#receptor-cyl0)" stroke="#16598c" stroke-width="0.85"/>
+<rect x="105.25" y="288.2" width="7.8" height="20.2" rx="3.4" fill="url(#receptor-vsh)"/>
+<rect x="106.75" y="290.4" width="1.2" height="15.6" rx="0.6" fill="#b8fbff" opacity="0.7" filter="url(#receptor-b03)"/>
+<rect x="113.05" y="288.1" width="7.9" height="20" rx="3.4" fill="url(#receptor-cyl1)" stroke="#16598c" stroke-width="0.85"/>
+<rect x="113.05" y="288.1" width="7.9" height="20" rx="3.4" fill="url(#receptor-vsh)"/>
+<rect x="115.15" y="290.3" width="1.2" height="15.4" rx="0.6" fill="#b8fbff" opacity="0.7" filter="url(#receptor-b03)"/>
+<rect x="120.95" y="287.1" width="8.7" height="20.3" rx="3.4" fill="url(#receptor-cyl2)" stroke="#16598c" stroke-width="0.85"/>
+<rect x="120.95" y="287.1" width="8.7" height="20.3" rx="3.4" fill="url(#receptor-vsh)"/>
+<rect x="123.75" y="289.3" width="1.2" height="15.7" rx="0.6" fill="#b8fbff" opacity="0.7" filter="url(#receptor-b03)"/>
+<rect x="129.65" y="286.6" width="9.5" height="20" rx="3.4" fill="url(#receptor-cyl3)" stroke="#16598c" stroke-width="0.85"/>
+<rect x="129.65" y="286.6" width="9.5" height="20" rx="3.4" fill="url(#receptor-vsh)"/>
+<rect x="132.65" y="288.8" width="1.2" height="15.4" rx="0.6" fill="#b8fbff" opacity="0.7" filter="url(#receptor-b03)"/>
+<rect x="139.15" y="286.2" width="6.35" height="19.3" rx="3.17" fill="url(#receptor-cyl4)" stroke="#16598c" stroke-width="0.85"/>
+<rect x="139.15" y="286.2" width="6.35" height="19.3" rx="3.17" fill="url(#receptor-vsh)"/>
+<rect x="140.75" y="288.4" width="1.2" height="14.7" rx="0.6" fill="#b8fbff" opacity="0.7" filter="url(#receptor-b03)"/>
+</g>

@@ -1,158 +1,221 @@
 <g id="bowl">
   <defs>
-    <filter id="bowl-blur1" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1"/></filter>
-    <filter id="bowl-blur05" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="0.5"/></filter>
-    <filter id="bowl-blur03" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="0.3"/></filter>
-    <linearGradient id="bowl-body" gradientUnits="userSpaceOnUse" x1="311" y1="0" x2="384" y2="0">
-      <stop offset="0" stop-color="#c3cfcd"/>
-      <stop offset="0.1" stop-color="#d3dfdc"/>
-      <stop offset="0.24" stop-color="#e6eeed"/>
-      <stop offset="0.4" stop-color="#d6e3e1"/>
-      <stop offset="0.58" stop-color="#bfcecc"/>
-      <stop offset="0.72" stop-color="#a2b8b5"/>
-      <stop offset="0.86" stop-color="#8ea4a4"/>
-      <stop offset="1" stop-color="#7f9597"/>
+    <filter id="bowl-b03" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="0.3"/></filter>
+    <filter id="bowl-b05" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="0.5"/></filter>
+    <filter id="bowl-b08" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="0.8"/></filter>
+    <filter id="bowl-b15" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.5"/></filter>
+
+    <!-- bowl body: white ceramic, light on the left, grey-teal shade to the right -->
+    <linearGradient id="bowl-body" gradientUnits="userSpaceOnUse" x1="312" y1="0" x2="384" y2="0">
+      <stop offset="0" stop-color="#c3cecc"/>
+      <stop offset="0.08" stop-color="#cdd7d5"/>
+      <stop offset="0.17" stop-color="#dbe3e1"/>
+      <stop offset="0.24" stop-color="#e6ecea"/>
+      <stop offset="0.3" stop-color="#e1e9e7"/>
+      <stop offset="0.36" stop-color="#d4e1df"/>
+      <stop offset="0.45" stop-color="#cbd9d8"/>
+      <stop offset="0.53" stop-color="#c3d1d0"/>
+      <stop offset="0.61" stop-color="#b5c5c4"/>
+      <stop offset="0.69" stop-color="#a1b5b3"/>
+      <stop offset="0.78" stop-color="#90a6a4"/>
+      <stop offset="0.86" stop-color="#83999a"/>
+      <stop offset="1" stop-color="#7e9395"/>
     </linearGradient>
-    <linearGradient id="bowl-bodyV" gradientUnits="userSpaceOnUse" x1="0" y1="24" x2="0" y2="44">
-      <stop offset="0" stop-color="#5f7f86" stop-opacity="0"/>
-      <stop offset="0.55" stop-color="#5f7f86" stop-opacity="0.04"/>
-      <stop offset="0.8" stop-color="#5f7f86" stop-opacity="0.2"/>
-      <stop offset="1" stop-color="#4f6c78" stop-opacity="0.42"/>
+    <linearGradient id="bowl-bodyV" gradientUnits="userSpaceOnUse" x1="0" y1="25" x2="0" y2="43">
+      <stop offset="0" stop-color="#4f707a" stop-opacity="0.06"/>
+      <stop offset="0.35" stop-color="#4f707a" stop-opacity="0"/>
+      <stop offset="0.6" stop-color="#4f707a" stop-opacity="0.04"/>
+      <stop offset="0.8" stop-color="#4f707a" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#46646f" stop-opacity="0.42"/>
     </linearGradient>
-    <linearGradient id="bowl-rim" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="25">
-      <stop offset="0" stop-color="#d6e0de"/>
-      <stop offset="0.25" stop-color="#e4ecea"/>
-      <stop offset="0.6" stop-color="#f2f7f5"/>
-      <stop offset="1" stop-color="#fafbf6"/>
-    </linearGradient>
-    <linearGradient id="bowl-wall" gradientUnits="userSpaceOnUse" x1="316" y1="0" x2="381" y2="0">
-      <stop offset="0" stop-color="#9aa5a1"/>
-      <stop offset="0.12" stop-color="#939c97"/>
-      <stop offset="0.3" stop-color="#b3b4a6"/>
-      <stop offset="0.48" stop-color="#d3c8ac"/>
-      <stop offset="0.66" stop-color="#ead9b9"/>
-      <stop offset="0.82" stop-color="#f0e3d0"/>
-      <stop offset="1" stop-color="#e2e4df"/>
-    </linearGradient>
-    <linearGradient id="bowl-wallGlow" gradientUnits="userSpaceOnUse" x1="0" y1="3" x2="0" y2="11">
-      <stop offset="0" stop-color="#f3c27e" stop-opacity="0"/>
-      <stop offset="0.55" stop-color="#efbd78" stop-opacity="0.15"/>
-      <stop offset="1" stop-color="#e9b26a" stop-opacity="0.75"/>
-    </linearGradient>
-    <linearGradient id="bowl-liq" gradientUnits="userSpaceOnUse" x1="0" y1="9.4" x2="0" y2="22.7">
-      <stop offset="0" stop-color="#93622a"/>
-      <stop offset="0.15" stop-color="#83501a"/>
-      <stop offset="0.38" stop-color="#6a3709"/>
-      <stop offset="0.6" stop-color="#532503"/>
-      <stop offset="0.85" stop-color="#461d03"/>
-      <stop offset="1" stop-color="#3d1a07"/>
-    </linearGradient>
-    <radialGradient id="bowl-liqR" gradientUnits="userSpaceOnUse" cx="367" cy="13.5" r="13" gradientTransform="translate(367 13.5) scale(1 0.45) translate(-367 -13.5)">
-      <stop offset="0" stop-color="#b5712a" stop-opacity="0.95"/>
-      <stop offset="0.5" stop-color="#a2601d" stop-opacity="0.6"/>
-      <stop offset="1" stop-color="#8a4d14" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="bowl-foot" gradientUnits="userSpaceOnUse" x1="0" y1="42" x2="0" y2="45.6">
+    <linearGradient id="bowl-foot" gradientUnits="userSpaceOnUse" x1="0" y1="41.8" x2="0" y2="45.6">
       <stop offset="0" stop-color="#93a6ad"/>
-      <stop offset="1" stop-color="#71868f"/>
+      <stop offset="0.5" stop-color="#8396a0"/>
+      <stop offset="1" stop-color="#6d838e"/>
     </linearGradient>
-    <linearGradient id="bowl-p1" gradientUnits="userSpaceOnUse" x1="388" y1="18.5" x2="398" y2="29">
-      <stop offset="0" stop-color="#a27554"/>
-      <stop offset="0.35" stop-color="#93633a"/>
-      <stop offset="0.6" stop-color="#9c6638"/>
-      <stop offset="0.8" stop-color="#6b3a0f"/>
-      <stop offset="1" stop-color="#55290a"/>
+    <!-- rim top surface -->
+    <linearGradient id="bowl-rim" gradientUnits="userSpaceOnUse" x1="312" y1="0" x2="384" y2="0">
+      <stop offset="0" stop-color="#bccac7"/>
+      <stop offset="0.12" stop-color="#cbd6d3"/>
+      <stop offset="0.35" stop-color="#d7dfdb"/>
+      <stop offset="0.6" stop-color="#dfe5e0"/>
+      <stop offset="0.85" stop-color="#eef2ef"/>
+      <stop offset="1" stop-color="#f3f6f4"/>
     </linearGradient>
-    <linearGradient id="bowl-p2" gradientUnits="userSpaceOnUse" x1="379" y1="0" x2="417" y2="0">
-      <stop offset="0" stop-color="#8e602e"/>
-      <stop offset="0.1" stop-color="#b9844a"/>
-      <stop offset="0.25" stop-color="#ebb777"/>
-      <stop offset="0.45" stop-color="#ffcf92"/>
-      <stop offset="0.7" stop-color="#fcd096"/>
-      <stop offset="1" stop-color="#f0cfa2"/>
+    <!-- inner wall: grey-green on the left to cream on the right -->
+    <linearGradient id="bowl-wall" gradientUnits="userSpaceOnUse" x1="315" y1="0" x2="381" y2="0">
+      <stop offset="0" stop-color="#87938a"/>
+      <stop offset="0.12" stop-color="#8f998f"/>
+      <stop offset="0.24" stop-color="#a6aea8"/>
+      <stop offset="0.38" stop-color="#bdbfb6"/>
+      <stop offset="0.53" stop-color="#d7d2c2"/>
+      <stop offset="0.68" stop-color="#eee5d4"/>
+      <stop offset="0.84" stop-color="#efe9de"/>
+      <stop offset="1" stop-color="#e3e0d8"/>
     </linearGradient>
-    <linearGradient id="bowl-p3" gradientUnits="userSpaceOnUse" x1="358" y1="44" x2="392" y2="34">
-      <stop offset="0" stop-color="#e6d8bc"/>
-      <stop offset="0.2" stop-color="#f6ddb0"/>
-      <stop offset="0.45" stop-color="#ffd9a0"/>
-      <stop offset="0.75" stop-color="#f9cd92"/>
-      <stop offset="1" stop-color="#f3c387"/>
+    <linearGradient id="bowl-glowG" gradientUnits="userSpaceOnUse" x1="318" y1="0" x2="378" y2="0">
+      <stop offset="0" stop-color="#a99a78" stop-opacity="0"/>
+      <stop offset="0.25" stop-color="#b79d6c" stop-opacity="0.45"/>
+      <stop offset="0.45" stop-color="#d9ab62" stop-opacity="0.85"/>
+      <stop offset="0.7" stop-color="#f0c98c" stop-opacity="0.9"/>
+      <stop offset="0.9" stop-color="#f1d3ad" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#ecd8bf" stop-opacity="0.3"/>
     </linearGradient>
-    <clipPath id="bowl-innerClip">
-      <path d="M350,3 C367,3 380.5,6.5 380.5,12.5 C380.5,18.2 366,22.6 348,22.6 C330,22.6 315.2,18.5 315.2,12.8 C315.2,7 332,3 350,3 Z"/>
+    <!-- decoction -->
+    <linearGradient id="bowl-liq" gradientUnits="userSpaceOnUse" x1="0" y1="9" x2="0" y2="23">
+      <stop offset="0" stop-color="#9a5f1d"/>
+      <stop offset="0.12" stop-color="#8a5115"/>
+      <stop offset="0.35" stop-color="#6a3709"/>
+      <stop offset="0.55" stop-color="#532503"/>
+      <stop offset="0.8" stop-color="#481d03"/>
+      <stop offset="1" stop-color="#462414"/>
+    </linearGradient>
+    <radialGradient id="bowl-liqR" gradientUnits="userSpaceOnUse" cx="364" cy="12.6" r="14" gradientTransform="translate(364 12.6) scale(1 0.36) translate(-364 -12.6)">
+      <stop offset="0" stop-color="#b8711f" stop-opacity="0.95"/>
+      <stop offset="0.55" stop-color="#a8641b" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#8f4f14" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bowl-outl" gradientUnits="userSpaceOnUse" x1="312" y1="0" x2="384" y2="0">
+      <stop offset="0" stop-color="#8f9b99"/>
+      <stop offset="0.25" stop-color="#a5afac"/>
+      <stop offset="0.5" stop-color="#b8c0bc"/>
+      <stop offset="0.75" stop-color="#b0b9b6"/>
+      <stop offset="1" stop-color="#9aa6a4"/>
+    </linearGradient>
+    <linearGradient id="bowl-lipL" gradientUnits="userSpaceOnUse" x1="315" y1="0" x2="356" y2="0">
+      <stop offset="0" stop-color="#7f8b86" stop-opacity="0.95"/>
+      <stop offset="0.45" stop-color="#8f9993" stop-opacity="0.8"/>
+      <stop offset="0.8" stop-color="#b0b4ab" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#c0c3bb" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- herbs -->
+    <linearGradient id="bowl-p1" gradientUnits="userSpaceOnUse" x1="384" y1="19" x2="402" y2="28">
+      <stop offset="0" stop-color="#8a6446"/>
+      <stop offset="0.35" stop-color="#8e5c2e"/>
+      <stop offset="0.65" stop-color="#6a3a10"/>
+      <stop offset="1" stop-color="#4f2807"/>
+    </linearGradient>
+    <linearGradient id="bowl-p2" gradientUnits="userSpaceOnUse" x1="379" y1="0" x2="418" y2="0">
+      <stop offset="0" stop-color="#76502a"/>
+      <stop offset="0.08" stop-color="#a7743c"/>
+      <stop offset="0.2" stop-color="#e6b072"/>
+      <stop offset="0.38" stop-color="#ffd194"/>
+      <stop offset="0.65" stop-color="#f9cc92"/>
+      <stop offset="0.9" stop-color="#f5cf9e"/>
+      <stop offset="1" stop-color="#eccda4"/>
+    </linearGradient>
+    <linearGradient id="bowl-p3" gradientUnits="userSpaceOnUse" x1="360" y1="45" x2="388" y2="33">
+      <stop offset="0" stop-color="#e7dabd"/>
+      <stop offset="0.25" stop-color="#f4d8a6"/>
+      <stop offset="0.55" stop-color="#fbcf94"/>
+      <stop offset="0.85" stop-color="#f9c98c"/>
+      <stop offset="1" stop-color="#f2c385"/>
+    </linearGradient>
+
+    <clipPath id="bowl-cInner">
+      <ellipse cx="348" cy="13.4" rx="33" ry="9.7" transform="rotate(-0.6 348 13.4)"/>
+    </clipPath>
+    <clipPath id="bowl-cBody">
+      <path d="M311.8,13 C312.4,26.5 319,38.2 330.2,42.3 L365.4,42.3 C376.6,38.2 383.2,26.5 383.8,12.3 Z"/>
     </clipPath>
   </defs>
 
-  <!-- soft shadow under foot -->
-  <ellipse cx="346" cy="44.6" rx="21" ry="1.8" fill="#6f8790" opacity="0.35" filter="url(#bowl-blur1)"/>
+  <!-- ===== BOWL ===== -->
+  <!-- soft shadow under the foot -->
+  <ellipse cx="348" cy="45" rx="22" ry="1.6" fill="#5f7682" opacity="0.45" filter="url(#bowl-b08)"/>
 
-  <!-- bowl body -->
-  <path d="M311.7,13 C312,26 318,36.5 329.5,42 L365.3,42 C376.8,36.5 382.9,26 383.2,13 Z" fill="url(#bowl-body)"/>
-  <path d="M311.7,13 C312,26 318,36.5 329.5,42 L365.3,42 C376.8,36.5 382.9,26 383.2,13 Z" fill="url(#bowl-bodyV)"/>
-  <!-- foot ring -->
-  <path d="M329.6,42 L330.4,42.3 L331.2,45.6 L364,45.6 L364.6,42.3 L365.3,42 Z" fill="url(#bowl-foot)"/>
-  <path d="M330.4,42.3 L331.2,45.6" stroke="#5b6d76" stroke-width="0.8" fill="none"/>
-  <!-- body outline -->
-  <path d="M311.7,13 C312,26 318,36.5 329.5,42" fill="none" stroke="#8d9b9b" stroke-width="0.9"/>
-  <path d="M383.2,13 C382.9,26 376.8,36.5 365.3,42" fill="none" stroke="#6f8486" stroke-width="0.9"/>
-
-  <!-- rim (outer ellipse) -->
-  <path d="M352,0.5 C369.5,0.5 383.4,5.5 383.4,12.5 C383.4,19.5 368,24.8 348,24.8 C328,24.8 311.6,20 311.6,13 C311.6,5.6 328,0.5 352,0.5 Z" fill="url(#bowl-rim)"/>
-  <!-- under-rim shading line -->
-  <path d="M316,21.5 C324,24.6 336,25.5 348,25.4 C362,25.3 374,22.8 381,19.5" fill="none" stroke="#9fb0ae" stroke-width="0.8" opacity="0.55"/>
-  <!-- inner wall -->
-  <path d="M350,3 C367,3 380.5,6.5 380.5,12.5 C380.5,18.2 366,22.6 348,22.6 C330,22.6 315.2,18.5 315.2,12.8 C315.2,7 332,3 350,3 Z" fill="url(#bowl-wall)"/>
-  <g clip-path="url(#bowl-innerClip)">
-    <rect x="315" y="3" width="66" height="9" fill="url(#bowl-wallGlow)"/>
-    <!-- liquid -->
-    <path d="M319,16.3 C320.5,12.2 330,9.5 346,9.4 C360,9.3 371,11 376.7,15.4 C373,19.5 362,23.5 348,23.6 C334,23.6 322,20.5 319,16.3 Z" fill="url(#bowl-liq)"/>
-    <path d="M319,16.3 C320.5,12.2 330,9.5 346,9.4 C360,9.3 371,11 376.7,15.4 C373,19.5 362,23.5 348,23.6 C334,23.6 322,20.5 319,16.3 Z" fill="url(#bowl-liqR)"/>
-    <!-- sheen -->
-    <path d="M326,13.2 C333,11 344,10.6 356,11.2 C349,11.6 336,12.3 326,13.2 Z" fill="#b07a40" opacity="0.45" filter="url(#bowl-blur05)"/>
-    <ellipse cx="330" cy="18.5" rx="9" ry="2.6" fill="#2e1503" opacity="0.35" filter="url(#bowl-blur1)"/>
+  <!-- body -->
+  <path d="M311.8,13 C312.4,26.5 319,38.2 330.2,42.3 L365.4,42.3 C376.6,38.2 383.2,26.5 383.8,12.3 Z" fill="url(#bowl-body)"/>
+  <g clip-path="url(#bowl-cBody)">
+    <rect x="310" y="12" width="76" height="32" fill="url(#bowl-bodyV)"/>
+    <!-- soft highlight -->
+    <path d="M325,25.5 C330,26 333.5,30 334,35 C334.3,38 332,39.5 329,37.5 C326,35 324.5,30 325,25.5 Z" fill="#f2f6f5" opacity="0.55" filter="url(#bowl-b15)"/>
+    <!-- shading along left contour -->
+    <path d="M312.6,14 C313.2,26.5 319.5,37.5 330.5,41.8" fill="none" stroke="#9eacab" stroke-width="2.2" opacity="0.55" filter="url(#bowl-b08)"/>
+    <!-- greyish-olive reflection from the herbs on the right -->
+    <ellipse cx="377" cy="28" rx="5.5" ry="7" fill="#7b7660" opacity="0.55" filter="url(#bowl-b15)"/>
+    <!-- shade just under the rim -->
+    <path d="M318,22 C328,26.2 340,26.8 350,26.6 C361,26.4 371,24.4 380,20" fill="none" stroke="#9fb0b0" stroke-width="1.2" opacity="0.35" filter="url(#bowl-b05)"/>
   </g>
-  <!-- inner lip line -->
-  <path d="M380.5,12.5 C380.5,7.5 370,3.6 352,3.1 M327,5 C320,6.5 315.2,9 315.2,12.8 C315.2,14.6 316.5,15.8 318.6,16.6" fill="none" stroke="#8f9995" stroke-width="0.7" opacity="0.7"/>
-  <!-- front rim highlight -->
-  <path d="M318,17.6 C326,21.5 338,23.4 349,23.4 C361,23.4 371,21 376.5,18" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.85"/>
-  <!-- outer rim outline -->
-  <path d="M352,0.5 C369.5,0.5 383.4,5.5 383.4,12.5 M311.6,13 C311.6,5.6 328,0.5 352,0.5" fill="none" stroke="#9ba6a4" stroke-width="0.9"/>
-  <path d="M311.6,13 L311.7,13.6 M383.4,12.5 L383.2,13.6" fill="none" stroke="#8d9b9b" stroke-width="0.9"/>
-  <!-- left rim highlight -->
-  <path d="M313.2,9.5 C312.7,11.5 312.8,14 313.4,16" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.8"/>
+  <!-- foot ring -->
+  <path d="M330.2,41.9 L365.4,41.9 L365.1,45.8 L330.5,45.8 Z" fill="url(#bowl-foot)"/>
+  <path d="M330.6,41.8 L330.8,45.6" stroke="#5e6f78" stroke-width="0.9" fill="none"/>
+  <path d="M331,42.2 C340,42.9 356,42.9 365,42.2" stroke="#a9bac0" stroke-width="0.5" fill="none" opacity="0.6"/>
+  <!-- body outlines -->
+  <path d="M311.8,13 C312.4,26.5 319,38.2 330.4,42.2" fill="none" stroke="#97a3a1" stroke-width="0.95"/>
+  <path d="M383.8,12.3 C383.2,26.5 376.6,38.2 365.4,42.2" fill="none" stroke="#7d8f90" stroke-width="0.9"/>
 
-  <!-- ===== herbs ===== -->
-  <!-- herb shadow -->
-  <path d="M362,45.5 C372,44.5 395,44 410,43 C414,42 417,37 418,32 L414,40 L400,44.5 Z" fill="#6c5a48" opacity="0.25" filter="url(#bowl-blur1)"/>
-  <!-- dark gap shadow between bowl and herbs -->
-  <ellipse cx="379.3" cy="31.2" rx="2.2" ry="2" fill="#3e2608" opacity="0.85" filter="url(#bowl-blur05)"/>
+  <!-- rim top surface (outer ellipse) -->
+  <ellipse cx="347.8" cy="13" rx="35.8" ry="12.2" transform="rotate(-0.6 347.8 13)" fill="url(#bowl-rim)"/>
+  <!-- right part of the rim front is shaded -->
+  <path d="M356,24.4 C366,23.6 375,20.8 381,16.5" fill="none" stroke="#a9b6b4" stroke-width="1.6" opacity="0.6" filter="url(#bowl-b05)"/>
+  <!-- inner wall -->
+  <ellipse cx="348" cy="13.4" rx="33" ry="9.7" transform="rotate(-0.6 348 13.4)" fill="url(#bowl-wall)"/>
+  <g clip-path="url(#bowl-cInner)">
+    <!-- lighter band near the lip at the top -->
+    <path d="M322,7 C332,4.4 344,3.8 356,4.2 C366,4.6 374,6 379,8.5" fill="none" stroke="#dfe3dc" stroke-width="1.6" opacity="0.5" filter="url(#bowl-b05)"/>
+    <!-- warm glow of the decoction on the wall -->
+    <path d="M321,13.6 C326,10.4 336,8.6 348,8.4 C362,8.3 372,10.4 377,14.4" fill="none" stroke="url(#bowl-glowG)" stroke-width="3.2" filter="url(#bowl-b08)"/>
+    <!-- decoction -->
+    <path d="M319,16.3 C321,12.7 333,9.1 348,9 C363,9 374.4,11.6 377.6,15.7 C375,19.1 363,22.9 348,23.1 C333,23.1 321.4,20.1 319,16.3 Z" fill="url(#bowl-liq)"/>
+    <path d="M319,16.3 C321,12.7 333,9.1 348,9 C363,9 374.4,11.6 377.6,15.7 C375,19.1 363,22.9 348,23.1 C333,23.1 321.4,20.1 319,16.3 Z" fill="url(#bowl-liqR)"/>
+    <!-- darker left part of the liquid -->
+    <ellipse cx="329" cy="17.2" rx="8" ry="3" fill="#3a1a04" opacity="0.45" filter="url(#bowl-b08)"/>
+    <!-- subtle sheen line near the top -->
+    <path d="M330,11.2 C337,9.9 346,9.6 354,9.9" fill="none" stroke="#a8702c" stroke-width="0.8" opacity="0.5" filter="url(#bowl-b03)"/>
+  </g>
+  <!-- inner lip line (visible on the left/top) -->
+  <path d="M318.6,16.4 C315.6,14.6 314.8,12 316.6,9.8 C319,7.2 324.5,5.4 331,4.4 C338,3.6 346,3.4 356,3.8" fill="none" stroke="url(#bowl-lipL)" stroke-width="0.9"/>
+  <!-- white front rim surface -->
+  <path d="M316.6,16.6 C319,18.4 322.5,19.9 327,21.1 C332.5,22.4 339,23.3 347,23.6 C355,23.6 362,22.6 367.5,21 C371.5,19.8 374.5,18.4 376.6,17" fill="none" stroke="#f7f9f6" stroke-width="1.35" opacity="0.95"/>
+  <!-- left rim highlight -->
+  <path d="M313.7,8.6 C312.9,10.6 312.9,13.2 313.6,15.4 C314.2,16.6 315.2,17.4 316.2,17.6" fill="none" stroke="#f6f9f8" stroke-width="1.1" opacity="0.9"/>
+  <!-- right rim highlight -->
+  <path d="M378,6.8 C380.6,8.4 382,10.4 382.1,12.6 C382.1,14 381.2,15.4 380,16.4" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.85"/>
+  <!-- outer rim outline -->
+  <path d="M311.6,13.4 C311.2,5.4 328,0.6 348,0.7 C367,0.8 383.6,5.4 383.7,12.6" fill="none" stroke="url(#bowl-outl)" stroke-width="0.9"/>
+  <!-- faint outer edge along the front -->
+  <path d="M330,24 C337,25.1 344,25.4 351,25.3" fill="none" stroke="#b4c1c0" stroke-width="0.7" opacity="0.6"/>
+
+  <!-- ===== HERBS ===== -->
+  <!-- shadow on the table under the herbs -->
+  <path d="M362,45.6 C372,44.6 390,43.6 405,43.4 C410,43.4 412,44.4 411,45.6 Z" fill="#6c625a" opacity="0.55" filter="url(#bowl-b08)"/>
+  <ellipse cx="392.6" cy="43.8" rx="5" ry="1.2" fill="#b4b6c0" opacity="0.8" filter="url(#bowl-b05)"/>
 
   <!-- P1: back brown slice -->
-  <path d="M381.5,21 C383,20 386,19.3 389,19 C390.5,18.6 391.5,17.9 392.5,18.1 C393.5,18.4 394,19.2 396,19.2 C399,19.3 401,18.8 402.3,17.6 C403.3,17.1 404,18 404.4,19.5 C405.3,22 405.8,25.5 405.6,27.5 C405.3,28.6 404,28.9 402.5,28.7 C399,28.4 395.5,27.7 392,26.8 C389,26 386,25 383.5,24.4 C382,24 381,22.5 381.5,21 Z" fill="url(#bowl-p1)"/>
-  <path d="M392,21.5 C395,21 399,21.6 400.5,23 C398,24.5 394,24.2 391.5,23.2 Z" fill="#c08a5a" opacity="0.55" filter="url(#bowl-blur05)"/>
-  <path d="M402.6,18.2 C404,20 405,24 405,27.8" fill="none" stroke="#4e2c10" stroke-width="1.4" opacity="0.7"/>
-  <path d="M383.5,24.4 C388,25.8 395,27.6 402.5,28.7" fill="none" stroke="#5a2b04" stroke-width="1.6" opacity="0.8"/>
+  <path d="M380.6,23.5 C381.5,21.5 384,20 386.8,19.3 C389,18.8 390.8,17.5 392.5,17.6 C393.8,17.8 394.4,19.1 396.2,19.3 C398.6,19.5 400.6,18.7 402.2,17.4 C403.4,16.6 404.3,17.4 404.9,19 C405.7,21.3 406.5,24.4 406.3,26.8 C406.1,28.4 404.6,29.2 402.5,29.1 L384,28.6 C382,27.6 380.4,25.6 380.6,23.5 Z" fill="url(#bowl-p1)"/>
+  <ellipse cx="392" cy="21.8" rx="5.5" ry="1.8" fill="#b07c4c" opacity="0.7" filter="url(#bowl-b08)"/>
+  <ellipse cx="398.5" cy="25.2" rx="6" ry="1.8" fill="#46200a" opacity="0.65" filter="url(#bowl-b08)"/>
+  <path d="M381,22.4 C383.5,20.2 386.5,19.3 389,18.8 C390.5,18.4 391.5,17.6 392.6,17.8 C393.7,18 394.4,19.3 396.2,19.5 C398.6,19.7 400.6,18.8 402.3,17.5" fill="none" stroke="#5a3414" stroke-width="0.9" opacity="0.75" filter="url(#bowl-b03)"/>
+  <path d="M403.4,17.3 C404.8,19.5 405.9,23.4 405.8,27.6" fill="none" stroke="#4a2a10" stroke-width="1.2" opacity="0.7" filter="url(#bowl-b03)"/>
 
-  <!-- P2: big beige slice -->
-  <path d="M378.6,31.6 C378.6,28.5 380,26 381.6,24.6 C385,24.6 389,26 392,26.8 C396,27.8 400,28.6 404,28.9 C408,29.4 412.5,30.1 416.4,30.2 C417.2,30.2 417.8,30.4 417.6,31 C417,33.5 415.8,35.4 413.6,36.6 C412,37.6 410.4,38.2 409.6,39 C409.2,40.2 409.4,41.6 409,42.6 C404,43.3 398,43.6 393,43.2 C388,42.8 382,42.2 378,41 Z" fill="url(#bowl-p2)"/>
-  <!-- P2 bottom bark edge -->
-  <path d="M390.5,39.6 C394,40.3 399,40.6 404,40.6 C406.5,40.6 408.5,40.2 409.4,39.4 L409.2,42.6 C404,43.4 397,43.6 391,43 Z" fill="#6a4520"/>
-  <path d="M391,43 C397,43.6 404,43.4 409.2,42.6" fill="none" stroke="#4b4231" stroke-width="1" opacity="0.8"/>
-  <!-- curl -->
-  <path d="M417.4,30.5 C417,33.2 415.6,35.3 413.4,36.6 C411.6,37.6 410.2,38.2 409.4,39.6" fill="none" stroke="#5a3a18" stroke-width="2" stroke-linecap="round"/>
-  <path d="M416.6,31.6 C416,33.6 414.8,35 413,36" fill="none" stroke="#8a6a46" stroke-width="0.6" opacity="0.7"/>
-  <!-- P2 texture -->
-  <path d="M395,31 C399,30.4 404,31 407,32.5" fill="none" stroke="#e8b878" stroke-width="0.6" opacity="0.6"/>
-  <path d="M402,35 C404,34.6 406,35.2 407,36" fill="none" stroke="#e3b06f" stroke-width="0.6" opacity="0.6"/>
+  <!-- P2: big pale slice -->
+  <path d="M378.8,32 C378.6,29.8 379.6,27.6 381.4,26.6 C383.4,25.8 385.6,25.6 387.6,25.9 C390.5,26.3 393.5,27.3 396.5,28 C399.5,28.6 402.5,28.9 405.5,29.1 C409.5,29.4 413.5,29.8 416.6,30.1 C417.6,30.2 418.2,30.6 417.9,31.4 C417.4,33.6 416.4,35.4 414.6,36.7 C412.9,37.8 410.9,38.2 409.9,39.2 C409.4,40.4 409.9,42 409.4,43.2 C406,44 401,44.3 397,43.6 L392,42 L380,41 Z" fill="url(#bowl-p2)"/>
+  <!-- lower shading near the crease -->
+  <ellipse cx="394" cy="37.6" rx="4" ry="2" fill="#c48f58" opacity="0.6" filter="url(#bowl-b08)"/>
+  <ellipse cx="401.8" cy="34.7" rx="1.1" ry="0.8" fill="#b9874f" opacity="0.8" filter="url(#bowl-b03)"/>
+  <!-- top edge soft line -->
+  <path d="M386,26 C390,26.5 394,27.6 398,28.4 C403,29 410,29.5 416.4,30.1" fill="none" stroke="#c99a62" stroke-width="0.6" opacity="0.6" filter="url(#bowl-b03)"/>
+  <!-- right curled bark edge -->
+  <path d="M407.5,37.4 C410,37.2 412.6,36.6 414.4,35.4 C415.8,34.2 416.3,33.4 416.8,32.6 L417.7,31.2 C417.3,33.8 416.1,35.8 414.2,37.2 C412.5,38.4 410.6,38.8 409.8,39.6 Z" fill="#5f3d1f"/>
+  <path d="M417.6,30.7 C417.2,33.4 416,35.5 414,36.9 C412.4,38 410.6,38.5 409.8,39.6 L409.7,42.8" fill="none" stroke="#583718" stroke-width="1.5" stroke-linecap="round" filter="url(#bowl-b03)"/>
+  <!-- bark under P2 -->
+  <path d="M391,39.4 C395.5,40 400.5,40.7 404.5,40.5 C406.8,40.3 408.5,39.8 409.7,39.2 L409.9,43.2 C406.5,44 402,44.4 398,43.8 C395.5,43.3 393.2,42.5 390.6,41.8 Z" fill="#6a4c27"/>
+  <path d="M398,43.7 C402,44.2 406.5,43.9 409.8,43.1" fill="none" stroke="#4a3418" stroke-width="0.9" opacity="0.8"/>
+  <!-- left end tucked behind the bowl -->
+  <ellipse cx="379.4" cy="31.4" rx="1.9" ry="1.8" fill="#3a2008" opacity="0.9" filter="url(#bowl-b05)"/>
 
   <!-- P3: front-left slice -->
-  <path d="M357.5,44.6 C358.5,42.5 360.5,40.5 362.5,39 C364,37.8 365.5,36 366.5,34.6 C369,33.6 373,33 377,32.8 C380,32.6 382.5,32.6 384,33.2 C386.5,34 388.5,35.2 390,36.8 C391.3,38 392.5,39 394.2,39.7 C392,40.6 388,41 384,41.6 C379,42.3 374,43 371,44.2 C368,45.4 362,45.8 357.5,44.6 Z" fill="url(#bowl-p3)"/>
-  <!-- P3 bottom bark edge -->
-  <path d="M394.2,39.7 C392,40.6 388,41 384,41.6 C379,42.3 374,43 371,44.2 C368,45.4 364,45.7 360,45.3 C364,44.6 367,43.8 370,42.6 C374,41.3 380,40.6 385,39.9 C388.5,39.4 391.5,39.2 394.2,39.7 Z" fill="#5c3c17"/>
-  <!-- P3 top-left dark edge -->
-  <path d="M361.8,39.6 C363.2,38.2 364.6,37 365.8,35.6" fill="none" stroke="#7a6240" stroke-width="1.1" opacity="0.85"/>
-  <!-- fold line P3 / P2 -->
-  <path d="M381,32.6 C384.5,33.2 387.5,34.6 389.8,36.8 C391,38 392.2,38.9 394,39.6" fill="none" stroke="#9a6630" stroke-width="0.9" opacity="0.85"/>
-  <!-- P3 top edge soft -->
-  <path d="M366.5,34.6 C369,33.6 373,33 377,32.8 C380,32.6 382.5,32.6 384,33.2" fill="none" stroke="#b8a27a" stroke-width="0.7" opacity="0.7"/>
+  <path d="M356.4,45.6 C356.2,43.6 356.6,41.8 357.8,40.6 C359.2,39.4 361,38.6 362.6,37.4 C364,36.4 365.2,35.2 366,34.2 C367,33.3 368.6,32.9 371,32.8 C375,32.6 380,32.5 383.6,32.9 C386.2,33.4 388.4,35 390,36.8 C391.2,38.1 392.3,39 393.8,39.6 C389,40 384,40.5 380,41.5 C376,42.6 372,44 368.6,45.8 C364,46.2 360,46.1 356.4,45.6 Z" fill="url(#bowl-p3)"/>
+  <!-- bark under P3 -->
+  <path d="M368.2,45.9 C371.6,44.4 375.4,42.8 379.4,41.5 C384,40.2 388.6,39.7 393.9,39.4 L393.4,41.2 C390.8,41.8 388.6,42.6 386.8,43.6 C384.6,44.8 381.6,45.6 377.6,46 Z" fill="#5c4530"/>
+  <path d="M369,45.4 C373,43.6 377.5,42 382,41" fill="none" stroke="#3e2a14" stroke-width="0.8" opacity="0.7" filter="url(#bowl-b03)"/>
+  <!-- P3 top-left edge -->
+  <path d="M356.6,44.6 C356.4,42.6 357,41.4 358.4,40.3 C359.8,39.2 361.6,38.3 363,37.2 C364.4,36.1 365.3,35 366.2,34" fill="none" stroke="#7d7356" stroke-width="1" opacity="0.85" filter="url(#bowl-b03)"/>
+  <ellipse cx="364.6" cy="36.6" rx="1.4" ry="0.9" fill="#6d5634" opacity="0.7" filter="url(#bowl-b03)"/>
+  <!-- P3 top edge -->
+  <path d="M366.4,33.8 C369,33 374,32.8 378,32.7 C380.5,32.6 382.5,32.7 384,33" fill="none" stroke="#b4a07c" stroke-width="0.7" opacity="0.7" filter="url(#bowl-b03)"/>
+  <!-- crease P3 / P2 -->
+  <path d="M384.4,33.2 C386.8,34 388.6,35.4 390,37 C391.3,38.4 392.4,39.2 393.8,39.6" fill="none" stroke="#a46f38" stroke-width="1" opacity="0.9" filter="url(#bowl-b03)"/>
 </g>

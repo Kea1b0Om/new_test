@@ -1,0 +1,218 @@
+<g id="tube">
+  <defs>
+    <filter id="tube-blur1" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1"/></filter>
+    <filter id="tube-blur07" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="0.7"/></filter>
+    <filter id="tube-blur04" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="0.4"/></filter>
+    <clipPath id="tube-clip"><path d="M507.5 246.5 V264.6 A2.3 2.3 0 0 0 509.8 266.9 H514.7 A2.8 2.8 0 0 0 517.5 264.1 V246.5 Z"/></clipPath>
+    <clipPath id="tube-capclip"><path d="M506.4 240.2 A1.35 1.35 0 0 1 507.75 238.85 H517.1 A1.35 1.35 0 0 1 518.45 240.2 V245.7 A0.4 0.4 0 0 1 518.05 246.1 H506.8 A0.4 0.4 0 0 1 506.4 245.7 Z"/></clipPath>
+    <!-- cap -->
+    <linearGradient id="tube-capH" gradientUnits="userSpaceOnUse" x1="506.4" y1="0" x2="518.45" y2="0">
+      <stop offset="0" stop-color="#b0683e"/>
+      <stop offset="0.112" stop-color="#c47238"/>
+      <stop offset="0.192" stop-color="#f0924e"/>
+      <stop offset="0.272" stop-color="#ffa556"/>
+      <stop offset="0.352" stop-color="#f68c40"/>
+      <stop offset="0.432" stop-color="#f07a2c"/>
+      <stop offset="0.512" stop-color="#ec6a1e"/>
+      <stop offset="0.592" stop-color="#ec681c"/>
+      <stop offset="0.672" stop-color="#d55a18"/>
+      <stop offset="0.752" stop-color="#bf4c1a"/>
+      <stop offset="0.832" stop-color="#923610"/>
+      <stop offset="0.912" stop-color="#7a3216"/>
+      <stop offset="1" stop-color="#7a3a22"/>
+    </linearGradient>
+    <linearGradient id="tube-capTop" gradientUnits="userSpaceOnUse" x1="506.4" y1="0" x2="518.45" y2="0">
+      <stop offset="0" stop-color="#c49070"/>
+      <stop offset="0.112" stop-color="#bb8760"/>
+      <stop offset="0.25" stop-color="#bf7d50"/>
+      <stop offset="0.45" stop-color="#c87a44"/>
+      <stop offset="0.6" stop-color="#cf7640"/>
+      <stop offset="0.75" stop-color="#c47650"/>
+      <stop offset="0.85" stop-color="#a26344"/>
+      <stop offset="0.93" stop-color="#996952"/>
+      <stop offset="1" stop-color="#c8a090"/>
+    </linearGradient>
+    <linearGradient id="tube-lip" gradientUnits="userSpaceOnUse" x1="506.4" y1="0" x2="518.45" y2="0">
+      <stop offset="0" stop-color="#6a3018" stop-opacity="0.3"/>
+      <stop offset="0.1" stop-color="#6a3018" stop-opacity="0.15"/>
+      <stop offset="0.17" stop-color="#ffe6d0" stop-opacity="0.15"/>
+      <stop offset="0.25" stop-color="#ffe6d0" stop-opacity="0.35"/>
+      <stop offset="0.4" stop-color="#ffe6d0" stop-opacity="0.25"/>
+      <stop offset="0.5" stop-color="#ffe6d0" stop-opacity="0.1"/>
+      <stop offset="0.6" stop-color="#6a3018" stop-opacity="0.1"/>
+      <stop offset="0.75" stop-color="#6a3018" stop-opacity="0.22"/>
+      <stop offset="0.85" stop-color="#6a3018" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#6a3018" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="tube-rimH" gradientUnits="userSpaceOnUse" x1="506.5" y1="0" x2="518.2" y2="0">
+      <stop offset="0" stop-color="#b08070"/>
+      <stop offset="0.08" stop-color="#946553"/>
+      <stop offset="0.2" stop-color="#a37158"/>
+      <stop offset="0.35" stop-color="#b47858"/>
+      <stop offset="0.45" stop-color="#b06e4c"/>
+      <stop offset="0.55" stop-color="#9e5b40"/>
+      <stop offset="0.65" stop-color="#975942"/>
+      <stop offset="0.75" stop-color="#8c5745"/>
+      <stop offset="0.85" stop-color="#825649"/>
+      <stop offset="0.93" stop-color="#79544c"/>
+      <stop offset="1" stop-color="#906e6a"/>
+    </linearGradient>
+    <!-- glass (air part) -->
+    <linearGradient id="tube-airH" gradientUnits="userSpaceOnUse" x1="507.5" y1="0" x2="517.5" y2="0">
+      <stop offset="0" stop-color="#f8eeee"/>
+      <stop offset="0.1" stop-color="#fff2f4"/>
+      <stop offset="0.2" stop-color="#fff1ee"/>
+      <stop offset="0.3" stop-color="#ffede6"/>
+      <stop offset="0.4" stop-color="#ffe6e0"/>
+      <stop offset="0.5" stop-color="#fbe2e0"/>
+      <stop offset="0.6" stop-color="#efdcdc"/>
+      <stop offset="0.7" stop-color="#e3d8d9"/>
+      <stop offset="0.8" stop-color="#d4d0d0"/>
+      <stop offset="0.9" stop-color="#bebdbd"/>
+      <stop offset="1" stop-color="#a8a6a8"/>
+    </linearGradient>
+    <!-- serum -->
+    <linearGradient id="tube-serumH" gradientUnits="userSpaceOnUse" x1="507.5" y1="0" x2="517.5" y2="0">
+      <stop offset="0" stop-color="#c8a46c"/>
+      <stop offset="0.1" stop-color="#c4a066"/>
+      <stop offset="0.2" stop-color="#ffdc98"/>
+      <stop offset="0.3" stop-color="#f9c06f"/>
+      <stop offset="0.4" stop-color="#f3b056"/>
+      <stop offset="0.5" stop-color="#fcad4f"/>
+      <stop offset="0.6" stop-color="#f6a54b"/>
+      <stop offset="0.7" stop-color="#e49a50"/>
+      <stop offset="0.8" stop-color="#cb8b55"/>
+      <stop offset="0.9" stop-color="#c3956f"/>
+      <stop offset="1" stop-color="#b8957a"/>
+    </linearGradient>
+    <linearGradient id="tube-orangeV" gradientUnits="userSpaceOnUse" x1="0" y1="258" x2="0" y2="263">
+      <stop offset="0" stop-color="#ff7a10" stop-opacity="0"/>
+      <stop offset="0.6" stop-color="#ff7a10" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#ff7a10" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="tube-darkA" gradientUnits="userSpaceOnUse" x1="0" y1="260.5" x2="0" y2="267">
+      <stop offset="0" stop-color="#b04014" stop-opacity="0"/>
+      <stop offset="0.154" stop-color="#b04014" stop-opacity="0.12"/>
+      <stop offset="0.308" stop-color="#b04014" stop-opacity="0.42"/>
+      <stop offset="0.462" stop-color="#b04014" stop-opacity="0.95"/>
+      <stop offset="0.615" stop-color="#b04014" stop-opacity="0.95"/>
+      <stop offset="0.77" stop-color="#b04014" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#b04014" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="tube-darkB" gradientUnits="userSpaceOnUse" x1="0" y1="264" x2="0" y2="267">
+      <stop offset="0" stop-color="#843a2c" stop-opacity="0"/>
+      <stop offset="0.17" stop-color="#843a2c" stop-opacity="0.05"/>
+      <stop offset="0.5" stop-color="#843a2c" stop-opacity="0.3"/>
+      <stop offset="0.83" stop-color="#843a2c" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#843a2c" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="tube-maskH" gradientUnits="userSpaceOnUse" x1="507.5" y1="0" x2="517.5" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.15"/>
+      <stop offset="0.1" stop-color="#fff" stop-opacity="0.15"/>
+      <stop offset="0.2" stop-color="#fff" stop-opacity="0.2"/>
+      <stop offset="0.3" stop-color="#fff" stop-opacity="0.3"/>
+      <stop offset="0.4" stop-color="#fff" stop-opacity="0.45"/>
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0.52"/>
+      <stop offset="0.6" stop-color="#fff" stop-opacity="0.6"/>
+      <stop offset="0.7" stop-color="#fff" stop-opacity="0.66"/>
+      <stop offset="0.8" stop-color="#fff" stop-opacity="0.66"/>
+      <stop offset="0.9" stop-color="#fff" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.3"/>
+    </linearGradient>
+    <mask id="tube-mask" maskUnits="userSpaceOnUse" x="505" y="250" width="15" height="20"><rect x="505" y="250" width="15" height="20" fill="url(#tube-maskH)"/></mask>
+    <linearGradient id="tube-hiV" gradientUnits="userSpaceOnUse" x1="0" y1="247.5" x2="0" y2="266">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.1" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="0.72" stop-color="#ffd8a8" stop-opacity="0.3"/>
+      <stop offset="0.8" stop-color="#ffc48c" stop-opacity="0.75"/>
+      <stop offset="0.91" stop-color="#ffb882" stop-opacity="0.85"/>
+      <stop offset="0.98" stop-color="#e09070" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#e09070" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="tube-strokeL" gradientUnits="userSpaceOnUse" x1="0" y1="247" x2="0" y2="267">
+      <stop offset="0.000" stop-color="#b0918e"/>
+      <stop offset="0.048" stop-color="#aa969f"/>
+      <stop offset="0.100" stop-color="#a99da9"/>
+      <stop offset="0.152" stop-color="#aba1a9"/>
+      <stop offset="0.199" stop-color="#ab9f9f"/>
+      <stop offset="0.247" stop-color="#ab998f"/>
+      <stop offset="0.299" stop-color="#aa947f"/>
+      <stop offset="0.352" stop-color="#ab9274"/>
+      <stop offset="0.399" stop-color="#ac926f"/>
+      <stop offset="0.447" stop-color="#aa9168"/>
+      <stop offset="0.504" stop-color="#a58d61"/>
+      <stop offset="0.551" stop-color="#a38e61"/>
+      <stop offset="0.599" stop-color="#aa956a"/>
+      <stop offset="0.646" stop-color="#b39a72"/>
+      <stop offset="0.703" stop-color="#b69872"/>
+      <stop offset="0.751" stop-color="#b6936d"/>
+      <stop offset="0.798" stop-color="#b58d6a"/>
+      <stop offset="0.846" stop-color="#bb9276"/>
+      <stop offset="0.903" stop-color="#ab8475"/>
+      <stop offset="0.950" stop-color="#a87868"/>
+      <stop offset="1" stop-color="#9a5e4e"/>
+    </linearGradient>
+    <linearGradient id="tube-strokeR" gradientUnits="userSpaceOnUse" x1="0" y1="247" x2="0" y2="266">
+      <stop offset="0" stop-color="#a39394"/>
+      <stop offset="0.05" stop-color="#979598"/>
+      <stop offset="0.16" stop-color="#979691"/>
+      <stop offset="0.21" stop-color="#a19b8f"/>
+      <stop offset="0.26" stop-color="#9b8e7b"/>
+      <stop offset="0.315" stop-color="#a08e76"/>
+      <stop offset="0.37" stop-color="#a79378"/>
+      <stop offset="0.42" stop-color="#ae997e"/>
+      <stop offset="0.47" stop-color="#b29a82"/>
+      <stop offset="0.63" stop-color="#b2947c"/>
+      <stop offset="0.68" stop-color="#b28f79"/>
+      <stop offset="0.74" stop-color="#af8c78"/>
+      <stop offset="0.84" stop-color="#ab897d"/>
+      <stop offset="0.89" stop-color="#9f7e77"/>
+      <stop offset="1" stop-color="#9a6e68"/>
+    </linearGradient>
+  </defs>
+
+  <!-- soft shadow / glow -->
+  <ellipse cx="512.5" cy="267.9" rx="5.2" ry="1.1" fill="#6a3a3a" opacity="0.3" filter="url(#tube-blur04)"/>
+  <rect x="506.2" y="238.4" width="12.4" height="8" rx="1.4" fill="#f7a050" opacity="0.85" filter="url(#tube-blur1)"/>
+  <rect x="505.6" y="252.5" width="2.4" height="12.5" rx="1" fill="#e2b878" opacity="0.4" filter="url(#tube-blur07)"/>
+  <rect x="517" y="251.5" width="1.8" height="11" rx="0.8" fill="#d0c4a8" opacity="0.5" filter="url(#tube-blur07)"/>
+  <rect x="505.8" y="246.5" width="1.6" height="5" rx="0.8" fill="#c8b0c4" opacity="0.35" filter="url(#tube-blur04)"/>
+  <rect x="504.6" y="239.6" width="2.2" height="6.4" rx="1" fill="#f6a860" opacity="0.4" filter="url(#tube-blur07)"/>
+  <rect x="518" y="239.6" width="1.8" height="5" rx="0.9" fill="#f0a070" opacity="0.25" filter="url(#tube-blur07)"/>
+
+  <!-- glass tube contents -->
+  <g clip-path="url(#tube-clip)">
+    <rect x="507" y="246" width="11" height="22" fill="url(#tube-airH)"/>
+    <path d="M506 251.6 L512 251.8 L519 252.3 V269 H506 Z" fill="url(#tube-serumH)" filter="url(#tube-blur04)"/>
+    <rect x="507" y="258" width="11" height="10" fill="url(#tube-orangeV)"/>
+    <rect x="507" y="259" width="11" height="9" fill="url(#tube-darkA)" mask="url(#tube-mask)"/>
+    <rect x="507" y="263" width="11" height="5" fill="url(#tube-darkB)"/>
+    <ellipse cx="515.4" cy="264" rx="1.2" ry="1.9" fill="#5a2210" opacity="0.5" filter="url(#tube-blur04)"/>
+    <!-- meniscus: light at left, shaded at right -->
+    <ellipse cx="510.2" cy="252.7" rx="2.6" ry="0.8" fill="#fff6dc" opacity="0.4" filter="url(#tube-blur04)"/>
+    <ellipse cx="515.4" cy="254.4" rx="2" ry="1" fill="#7a5028" opacity="0.15" filter="url(#tube-blur04)"/>
+    <!-- shadow under cap -->
+    <rect x="507" y="246.8" width="11" height="1.2" fill="#b07a68" opacity="0.28"/>
+    <!-- glossy highlight stripe -->
+    <rect x="509" y="247.5" width="1" height="18.5" fill="url(#tube-hiV)"/>
+  </g>
+  <path d="M507.5 246.6 V264.6 A2.3 2.3 0 0 0 509.8 266.9 H514.7 A2.8 2.8 0 0 0 517.5 264.1 V246.6" fill="none" stroke="url(#tube-strokeL)" stroke-width="1"/>
+  <path d="M517.5 246.6 V262.6" fill="none" stroke="url(#tube-strokeR)" stroke-width="1"/>
+  
+  <!-- cap -->
+  <rect x="506.5" y="245.9" width="11.7" height="1.15" fill="url(#tube-rimH)"/>
+  <g clip-path="url(#tube-capclip)">
+    <rect x="506" y="238.5" width="13" height="8" fill="url(#tube-capH)"/>
+    <rect x="506" y="238.5" width="13" height="1.5" fill="url(#tube-capTop)" opacity="0.8"/>
+    <rect x="506" y="244.85" width="13" height="1.3" fill="url(#tube-lip)"/>
+    <!-- knurled grip ridges -->
+    <g stroke="#fff0d8" stroke-width="0.35" opacity="0.12">
+      <path d="M511.3 240.2 V244.6"/><path d="M513.3 240.2 V244.6"/><path d="M515.2 240.2 V244.6"/>
+    </g>
+    <g stroke="#7a2a08" stroke-width="0.35" opacity="0.1">
+      <path d="M510.6 240.2 V244.6"/><path d="M512.4 240.2 V244.6"/><path d="M514.3 240.2 V244.6"/><path d="M516.1 240.2 V244.6"/>
+    </g>
+  </g>
+  <rect x="506.6" y="239.05" width="11.65" height="6.85" rx="1.1" fill="none" stroke="#7a3a1e" stroke-width="0.4" opacity="0.35"/>
+</g>
