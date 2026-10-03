@@ -163,7 +163,7 @@
   </g>
   <path d="M66.8 274 C 72 278.2, 80 282.2, 92 283.6" fill="none" stroke="#1d2645" stroke-width="2" stroke-linecap="round"/>
   <path d="M90.6 279.2 L 100.2 284 L 90.4 288.4 Z" fill="#1d2645"/>
-  <text data-k="b2ar" x="103.93" y="278.4" font-size="12" font-weight="700" fill="#0d1838" textLength="31.85" lengthAdjust="spacingAndGlyphs">β2AR</text>
+  <text data-k="b2ar" x="107" y="276.7" font-size="12.6" font-weight="700" fill="#0d1838" textLength="27.6" lengthAdjust="spacingAndGlyphs">β2AR</text>
   <!--@include receptor-->
 
   <!-- β2AR -> cAMP arrow -->

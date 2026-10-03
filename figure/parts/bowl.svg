@@ -57,9 +57,10 @@
     <linearGradient id="bowl-glowG" gradientUnits="userSpaceOnUse" x1="318" y1="0" x2="379" y2="0">
       <stop offset="0" stop-color="#a99a78" stop-opacity="0"/>
       <stop offset="0.2" stop-color="#b09a72" stop-opacity="0.4"/>
-      <stop offset="0.4" stop-color="#cfa362" stop-opacity="0.8"/>
-      <stop offset="0.62" stop-color="#e8b76f" stop-opacity="0.95"/>
-      <stop offset="0.82" stop-color="#ecbd7e" stop-opacity="0.9"/>
+      <stop offset="0.4" stop-color="#d6a764" stop-opacity="0.85"/>
+      <stop offset="0.55" stop-color="#eebc72" stop-opacity="1"/>
+      <stop offset="0.7" stop-color="#f2c47e" stop-opacity="1"/>
+      <stop offset="0.85" stop-color="#efc58e" stop-opacity="0.85"/>
       <stop offset="1" stop-color="#e2c49a" stop-opacity="0.5"/>
     </linearGradient>
     <!-- decoction -->
@@ -74,7 +75,7 @@
       <stop offset="0.9" stop-color="#2f1306"/>
       <stop offset="1" stop-color="#3a271b"/>
     </linearGradient>
-    <radialGradient id="bowl-liqR" gradientUnits="userSpaceOnUse" cx="362" cy="12.8" r="12" gradientTransform="translate(362 12.8) scale(1 0.34) translate(-362 -12.8)">
+    <radialGradient id="bowl-liqR" gradientUnits="userSpaceOnUse" cx="364" cy="13.4" r="12" gradientTransform="translate(364 13.4) scale(1 0.36) translate(-364 -13.4)">
       <stop offset="0" stop-color="#b8711f" stop-opacity="0.95"/>
       <stop offset="0.6" stop-color="#ad681c" stop-opacity="0.75"/>
       <stop offset="1" stop-color="#985716" stop-opacity="0"/>
@@ -89,26 +90,27 @@
       <stop offset="1" stop-color="#84908f"/>
     </linearGradient>
     <linearGradient id="bowl-lipL" gradientUnits="userSpaceOnUse" x1="315" y1="0" x2="356" y2="0">
-      <stop offset="0" stop-color="#76827d" stop-opacity="0.95"/>
-      <stop offset="0.25" stop-color="#7d8882" stop-opacity="0.85"/>
+      <stop offset="0" stop-color="#6c7873" stop-opacity="1"/>
+      <stop offset="0.25" stop-color="#76817c" stop-opacity="0.9"/>
       <stop offset="0.45" stop-color="#8f9993" stop-opacity="0.7"/>
       <stop offset="0.8" stop-color="#b0b4ab" stop-opacity="0.45"/>
       <stop offset="1" stop-color="#c0c3bb" stop-opacity="0"/>
     </linearGradient>
 
     <!-- herbs -->
-    <linearGradient id="bowl-p1" gradientUnits="userSpaceOnUse" x1="394" y1="18.6" x2="397" y2="27.5">
-      <stop offset="0" stop-color="#a78260"/>
-      <stop offset="0.25" stop-color="#9c6c42"/>
-      <stop offset="0.5" stop-color="#83511f"/>
-      <stop offset="0.75" stop-color="#65340a"/>
+    <linearGradient id="bowl-p1" gradientUnits="userSpaceOnUse" x1="0" y1="18.6" x2="0" y2="28">
+      <stop offset="0" stop-color="#977155"/>
+      <stop offset="0.25" stop-color="#8a5c34"/>
+      <stop offset="0.5" stop-color="#76461b"/>
+      <stop offset="0.75" stop-color="#613108"/>
       <stop offset="1" stop-color="#5a2c04"/>
     </linearGradient>
     <linearGradient id="bowl-p2" gradientUnits="userSpaceOnUse" x1="379" y1="0" x2="418" y2="0">
       <stop offset="0" stop-color="#76502a"/>
-      <stop offset="0.08" stop-color="#a5743e"/>
-      <stop offset="0.2" stop-color="#e2ad70"/>
-      <stop offset="0.38" stop-color="#fcd094"/>
+      <stop offset="0.1" stop-color="#a47546"/>
+      <stop offset="0.2" stop-color="#c99659"/>
+      <stop offset="0.3" stop-color="#f0bd7f"/>
+      <stop offset="0.42" stop-color="#fdd095"/>
       <stop offset="0.65" stop-color="#f8cb91"/>
       <stop offset="0.9" stop-color="#f4cf9e"/>
       <stop offset="1" stop-color="#e9cba4"/>
@@ -125,39 +127,42 @@
       <ellipse cx="348" cy="13.5" rx="33" ry="9.75" transform="rotate(-0.6 348 13.5)"/>
     </clipPath>
     <clipPath id="bowl-cBody">
-      <path d="M312.2,13 C312.5,20 315.5,28.5 318.6,33.5 C321,37.4 324.5,40.6 330.4,42.4 L365.2,42.4 C371.1,40.6 374.6,37.4 377,33.5 C380.1,28.5 383.1,20 383.4,12.6 Z"/>
+      <path d="M312.2,13 C312.5,20 315.5,28.5 318.6,33.5 C321,37.4 324.5,40.6 330.4,42.4 L365.2,42.4 C371.1,40.6 374.6,37.4 377.3,33.5 C380.6,28.5 383.9,20 383.5,12.6 Z"/>
     </clipPath>
   </defs>
 
   <!-- ===== BOWL ===== -->
   <!-- soft shadow under the foot -->
   <ellipse cx="348" cy="45" rx="22" ry="1.6" fill="#5f7682" opacity="0.45" filter="url(#bowl-b08)"/>
+  <ellipse cx="334" cy="44.9" rx="14" ry="1.3" fill="#8e9ca6" opacity="0.4" filter="url(#bowl-b08)"/>
 
   <g filter="url(#bowl-soft)">
   <!-- body -->
-  <path d="M312.2,13 C312.5,20 315.5,28.5 318.6,33.5 C321,37.4 324.5,40.6 330.4,42.4 L365.2,42.4 C371.1,40.6 374.6,37.4 377,33.5 C380.1,28.5 383.1,20 383.4,12.6 Z" fill="url(#bowl-body)"/>
+  <path d="M312.2,13 C312.5,20 315.5,28.5 318.6,33.5 C321,37.4 324.5,40.6 330.4,42.4 L365.2,42.4 C371.1,40.6 374.6,37.4 377.3,33.5 C380.6,28.5 383.9,20 383.5,12.6 Z" fill="url(#bowl-body)"/>
   <g clip-path="url(#bowl-cBody)">
     <rect x="310" y="12" width="76" height="32" fill="url(#bowl-bodyV)"/>
     <!-- soft highlight -->
     <path d="M325,25.5 C330,26 333.5,30 334,35 C334.3,38 332,39.5 329,37.5 C326,35 324.5,30 325,25.5 Z" fill="#f2f6f5" opacity="0.5" filter="url(#bowl-b15)"/>
     <!-- shading along left contour -->
-    <path d="M312.8,15 C313.2,21 316,28.5 319,33.5 C321.5,37.5 325,40.4 330.5,42" fill="none" stroke="#97a7a8" stroke-width="2.4" opacity="0.6" filter="url(#bowl-b08)"/>
+    <path d="M313.4,15 C313.7,21 316.6,28.5 319.6,33.4 C322,37.2 325.4,40 330.5,41.6" fill="none" stroke="#f4f8f8" stroke-width="1" opacity="0.55" filter="url(#bowl-b03)"/>
+    <path d="M321,37 C324,40 327,41.4 331,42" fill="none" stroke="#8d9ea3" stroke-width="1.6" opacity="0.5" filter="url(#bowl-b05)"/>
     <!-- dark shade under the rim on the right -->
     <path d="M352,26.2 C362,25.6 371,23 377,19.6 C380,17.8 382,15.8 383,13.5" fill="none" stroke="#6f8687" stroke-width="3" opacity="0.6" filter="url(#bowl-b08)"/>
     <!-- greyish-olive shadow cast by the herbs on the lower right -->
-    <ellipse cx="377" cy="28" rx="5.5" ry="7" fill="#7b7660" opacity="0.6" filter="url(#bowl-b15)"/>
-    <path d="M362,32.6 C368,31.6 374,31.4 380,32" fill="none" stroke="#6c6f5c" stroke-width="2.6" opacity="0.75" filter="url(#bowl-b08)"/>
+    <ellipse cx="378.6" cy="30" rx="3.8" ry="3.6" fill="#7b7660" opacity="0.6" filter="url(#bowl-b15)"/>
+    <ellipse cx="380.4" cy="22.4" rx="1.6" ry="2.6" fill="#aaa58c" opacity="0.75" filter="url(#bowl-b05)"/>
+    <path d="M366,32.6 C370,31.8 375,31.5 380,32" fill="none" stroke="#6c6f5c" stroke-width="2.4" opacity="0.7" filter="url(#bowl-b08)"/>
     <ellipse cx="357" cy="42" rx="4" ry="2.5" fill="#5c6e6a" opacity="0.25" filter="url(#bowl-b15)"/>
     <!-- shade just under the rim front -->
     <path d="M320,22.6 C328,25.6 339,26.4 350,26.2" fill="none" stroke="#a9b8b8" stroke-width="1" opacity="0.4" filter="url(#bowl-b05)"/>
   </g>
   <!-- foot ring -->
   <path d="M330.4,41.9 L365.2,41.9 L365,45.8 L330.7,45.8 Z" fill="url(#bowl-foot)"/>
-  <path d="M330.8,42 L331,45.6" stroke="#5e6f78" stroke-width="0.9" fill="none"/>
+  <path d="M330.8,41.8 L331,45.6" stroke="#4c5d67" stroke-width="1.1" fill="none"/>
   <path d="M331.2,42.3 C340,42.9 356,42.9 365,42.3" stroke="#a9bac0" stroke-width="0.5" fill="none" opacity="0.5"/>
   <!-- body outlines -->
-  <path d="M312.2,13 C312.5,20 315.5,28.5 318.6,33.5 C321,37.4 324.5,40.6 330.6,42.4" fill="none" stroke="#95a2a1" stroke-width="1"/>
-  <path d="M383.3,12.6 C383.1,20 380.1,28.5 377,33.5" fill="none" stroke="#7a8b8b" stroke-width="1"/>
+  <path d="M312.2,13 C312.5,20 315.5,28.5 318.6,33.5 C321,37.4 324.5,40.6 330.6,42.4" fill="none" stroke="#7f8c8c" stroke-width="1"/>
+  <path d="M383.5,12.6 C383.9,20 380.6,28.5 377.3,33.5" fill="none" stroke="#788888" stroke-width="1"/>
 
   <!-- rim top surface (outer ellipse) -->
   <ellipse cx="347.8" cy="13" rx="35.7" ry="12.2" transform="rotate(-0.6 347.8 13)" fill="url(#bowl-rim)"/>
@@ -171,10 +176,10 @@
     <!-- warm glow of the decoction on the wall -->
     <path d="M321,13.4 C326,10.2 336,8.4 348,8.2 C360,8.3 370,10.4 377,14.6" fill="none" stroke="url(#bowl-glowG)" stroke-width="3" filter="url(#bowl-b08)"/>
     <!-- decoction -->
-    <path d="M319,16.3 C321,12.7 333,9.1 348,9 C356,9.1 361,10 365,11 C368.4,11.8 370.6,12.2 372,12.6 C374.8,13.4 377,14.6 378,16 C377.2,16.6 376.4,17.4 375,17.95 C374,18.4 373.2,18.7 372,19.05 C369.8,19.8 367.8,20.6 365,21.25 C361.4,22.1 358,22.7 355,22.9 C351.6,23.1 348.4,23.1 345,23 C341.4,22.75 338,22.5 335,22.1 C331,21.5 327.6,20.7 325,19.85 C322.4,18.8 320.4,17.6 319,16.3 Z" fill="url(#bowl-liq)"/>
-    <path d="M319,16.3 C321,12.7 333,9.1 348,9 C356,9.1 361,10 365,11 C368.4,11.8 370.6,12.2 372,12.6 C374.8,13.4 377,14.6 378,16 C377.2,16.6 376.4,17.4 375,17.95 C374,18.4 373.2,18.7 372,19.05 C369.8,19.8 367.8,20.6 365,21.25 C361.4,22.1 358,22.7 355,22.9 C351.6,23.1 348.4,23.1 345,23 C341.4,22.75 338,22.5 335,22.1 C331,21.5 327.6,20.7 325,19.85 C322.4,18.8 320.4,17.6 319,16.3 Z" fill="url(#bowl-liqR)"/>
+    <path d="M319,16.3 C321,12.7 333,9.1 348,9 C356,9.1 361,10 365,11 C368.4,11.8 370.6,12.2 372,12.6 C374.8,13.4 377,14.6 378,16 C377.4,16.8 376.6,17.8 375,18.3 C374,18.7 373.2,19 372,19.35 C369.8,20 367.8,20.8 365,21.4 C361.4,22.1 358,22.7 355,22.9 C351.6,23.1 348.4,23.1 345,23 C341.4,22.75 338,22.5 335,22.1 C331,21.5 327.6,20.7 325,19.85 C322.4,18.8 320.4,17.6 319,16.3 Z" fill="url(#bowl-liq)"/>
+    <path d="M319,16.3 C321,12.7 333,9.1 348,9 C356,9.1 361,10 365,11 C368.4,11.8 370.6,12.2 372,12.6 C374.8,13.4 377,14.6 378,16 C377.4,16.8 376.6,17.8 375,18.3 C374,18.7 373.2,19 372,19.35 C369.8,20 367.8,20.8 365,21.4 C361.4,22.1 358,22.7 355,22.9 C351.6,23.1 348.4,23.1 345,23 C341.4,22.75 338,22.5 335,22.1 C331,21.5 327.6,20.7 325,19.85 C322.4,18.8 320.4,17.6 319,16.3 Z" fill="url(#bowl-liqR)"/>
     <!-- slightly warmer lower right -->
-    <ellipse cx="365" cy="16.8" rx="7" ry="2.4" fill="#86501a" opacity="0.55" filter="url(#bowl-b08)"/>
+    <ellipse cx="366" cy="16" rx="6.5" ry="2.2" fill="#995a1c" opacity="0.6" filter="url(#bowl-b08)"/>
     <!-- right tip a bit darker -->
     <ellipse cx="372.5" cy="15.6" rx="3" ry="1.6" fill="#8f5a20" opacity="0.6" filter="url(#bowl-b05)"/>
     <!-- darker left part of the liquid -->
@@ -196,20 +201,23 @@
 
   <!-- ===== HERBS ===== -->
   <!-- shadow on the table under the herbs -->
-  <path d="M364,45.8 C372,44.6 390,43.8 405,43.6 C410,43.6 412,44.6 411,45.8 Z" fill="#6c625a" opacity="0.5" filter="url(#bowl-b08)"/>
-  <ellipse cx="392.4" cy="43.9" rx="5" ry="1.1" fill="#c8c9d1" opacity="0.8" filter="url(#bowl-b05)"/>
+  <path d="M366,45.8 C370,44.8 376,44.2 384,44.2 L386,45.8 Z" fill="#6c625a" opacity="0.45" filter="url(#bowl-b08)"/>
+  <path d="M400,45.8 C401,44.6 404,44 408,44 C410.5,44 411.5,45 411,45.8 Z" fill="#7a7068" opacity="0.4" filter="url(#bowl-b08)"/>
+  <ellipse cx="392.4" cy="43.6" rx="3.6" ry="0.9" fill="#b4b4bd" opacity="0.5" filter="url(#bowl-b05)"/>
 
   <g filter="url(#bowl-soft)">
   <!-- P1: back brown slice -->
-  <path d="M381.5,22 C381.6,21 382.2,20.2 383,19.8 C385,19.3 388,19.1 391,18.8 C391.6,18.6 392,18 392.4,18 C393,18 393.6,18.7 395,19 C397,19.1 400,19 402,18.6 C402.6,18.3 402.9,17.8 403.3,17.8 C403.8,17.8 404.1,18.2 404.4,18.8 C405,20.2 405.6,22.5 405.8,24.8 C405.9,26.2 405.9,27.5 405.7,28.6 L384,28.6 C382.5,26.8 381.5,24.4 381.5,22 Z" fill="url(#bowl-p1)"/>
-  <ellipse cx="393.5" cy="22" rx="4" ry="1.5" fill="#b9845a" opacity="0.7" filter="url(#bowl-b08)"/>
-  <ellipse cx="398.5" cy="20.2" rx="3.6" ry="1.2" fill="#c49b74" opacity="0.75" filter="url(#bowl-b05)"/>
-  <ellipse cx="398" cy="25.6" rx="5" ry="1.5" fill="#4e2302" opacity="0.4" filter="url(#bowl-b08)"/>
-  <path d="M383,19.9 C385,19.4 388,19.2 391,18.9 C391.6,18.7 392,18.1 392.4,18.1 C393,18.1 393.6,18.7 395,18.9 C397,19 400,18.9 402,18.5" fill="none" stroke="#6a3e18" stroke-width="0.8" opacity="0.6"/>
-  <path d="M402.9,18.2 C403.9,18.8 404.5,20.6 404.8,22.6 C405,24.6 405,26.6 404.8,28.4" fill="none" stroke="#56361a" stroke-width="2" opacity="0.75"/>
+  <path d="M381.6,22.4 C381.7,21.4 382.4,20.8 383.4,20.5 C385,20.1 387,19.6 389,19.2 C390,19 390.8,18.8 391.4,18.6 C391.7,18.4 392,18 392.4,18 C393,18 393.6,18.7 395,19 C397,19.1 400,19 402,18.6 C402.6,18.3 402.9,17.8 403.3,17.8 C403.6,17.8 403.9,18.2 404.1,18.8 C404.7,20.2 405.5,22.6 405.9,24.8 C406.1,26.2 406.1,27.5 405.9,28.6 L384,28.6 C382.5,26.8 381.6,24.6 381.6,22.4 Z" fill="url(#bowl-p1)"/>
+  <ellipse cx="394.6" cy="21.8" rx="5.2" ry="1.4" transform="rotate(-24 394.6 21.8)" fill="#c08a5a" opacity="0.8" filter="url(#bowl-b05)"/>
+  <ellipse cx="398.4" cy="19.9" rx="3.4" ry="0.9" fill="#c9a07a" opacity="0.75" filter="url(#bowl-b05)"/>
+  <ellipse cx="385.4" cy="23.2" rx="2.4" ry="1.6" fill="#5e3412" opacity="0.2" filter="url(#bowl-b08)"/>
+  <ellipse cx="394" cy="25.4" rx="3.5" ry="1.3" fill="#4e2302" opacity="0.3" filter="url(#bowl-b08)"/>
+  <path d="M383.6,20.6 C385.5,20.1 387.5,19.6 389.4,19.2 C390.4,19 391,18.9 391.4,18.7 C391.7,18.4 392,18.1 392.4,18.1 C393,18.1 393.6,18.7 395,18.9 C397,19 400,18.9 402,18.5" fill="none" stroke="#6a3e18" stroke-width="0.8" opacity="0.6"/>
+  <path d="M402.7,18.2 C403.5,18.8 404,20.6 404.3,22.6 C404.6,24.6 404.7,26.6 404.6,28.4" fill="none" stroke="#56361a" stroke-width="2" opacity="0.75"/>
 
   <!-- P2: big pale slice -->
   <path d="M378.8,32 C378.6,29.6 379.8,26.6 381.6,25 C382.8,24.2 384.4,24 386,24.6 C388,25.4 390.5,26.2 393,26.8 C394.4,27.1 395.4,27.3 396.5,27.6 C399.5,28.6 402.5,28.9 405.5,29.1 C409.5,29.4 413.5,29.8 416.4,30.2 C417.4,30.4 417.9,30.9 417.8,31.8 C417.4,34 416.4,35.8 414.4,37 C412.7,37.8 410.7,38.2 409.8,39.2 C409.3,40.4 409.8,42 409.4,43.2 C406,44 401,44.3 397,43.6 L392,42 L380,41 Z" fill="url(#bowl-p2)"/>
+  <path d="M391.5,27.3 C394,27.8 396.5,28.2 399,28.5" fill="none" stroke="#8d5c2c" stroke-width="1" opacity="0.35" filter="url(#bowl-b05)"/>
   <!-- lower shading near the crease -->
   <ellipse cx="395" cy="37.8" rx="4" ry="1.8" fill="#c99560" opacity="0.55" filter="url(#bowl-b08)"/>
   <ellipse cx="402.8" cy="34.8" rx="1" ry="0.8" fill="#b9874f" opacity="0.75" filter="url(#bowl-b03)"/>
@@ -217,23 +225,28 @@
   <path d="M386,26 C390,26.5 394,27.6 398,28.4 C403,29 410,29.5 416.4,30.1" fill="none" stroke="#c99a62" stroke-width="0.6" opacity="0.55"/>
   <!-- right curled bark edge -->
   <path d="M407.4,36.4 C410.2,36.4 412.8,35.8 414.4,34.8 C415.6,34 416.3,33.2 416.9,32.4 L417.6,31.6 C417.3,34.2 416.2,36.1 414.2,37.4 C412.5,38.5 410.6,38.9 409.9,39.6 L407.8,38 Z" fill="#5a391c"/>
+  <path d="M407.8,36.8 C410.4,36.8 413,36.1 414.8,34.9 L416.3,33.6 C416.2,35.8 415.6,37.4 414.4,38.6 C413.2,39.4 411.8,39.9 410.8,40.3 L409.6,40.4 L409.3,38.2 Z" fill="#5a391c" opacity="0.9"/>
   <path d="M417.6,31.2 C417.3,33.7 416.3,35.6 414.2,37 C412.4,38.1 410.6,38.6 409.9,39.6 L409.8,42.8" fill="none" stroke="#583718" stroke-width="1.5" stroke-linecap="round"/>
   <!-- bark under P2 -->
-  <path d="M390.2,38.6 C394.6,39.2 398.6,39.9 402,40.5 C404.5,41 407,41 408.6,40.6 L409.9,40 L409.9,43.2 C406.5,44 402,44.4 398.5,43.8 C396.5,43.4 394.8,42.6 393,42 C392,41.6 391,41.4 390.4,41.2 Z" fill="#664826"/>
-  <path d="M398.2,43.6 C402,44.2 406.5,43.9 409.8,43.1" fill="none" stroke="#4a3418" stroke-width="0.9" opacity="0.7"/>
+  <path d="M390.2,38.6 C394.6,39.2 398.6,39.9 402,40.5 C404.5,41 407,41 408.6,40.6 L409.9,40 L409.9,44 C407,44.6 402.5,44.8 398.5,43.9 C396.5,43.4 394.8,42.6 393,42 C392,41.6 391,41.4 390.4,41.2 Z" fill="#725228"/>
+  <path d="M398.4,43.8 C402,44.5 406.5,44.4 409.8,43.8" fill="none" stroke="#4a3418" stroke-width="0.9" opacity="0.6"/>
   <!-- left end tucked behind the bowl -->
   <ellipse cx="378.9" cy="31.5" rx="1.7" ry="1.6" fill="#3a2008" opacity="0.9" filter="url(#bowl-b05)"/>
 
   <!-- P3: front-left slice; dark rim first -->
-  <path d="M356.6,45.4 L356.6,43.6 C356.9,42.6 357.4,42 358.2,41.4 C359.2,40.6 360.2,40 361.4,39.4 C362.6,38.8 364,38.2 364.9,37.4 C365.5,36.8 365.2,35.8 365,35 C365,34.2 365.8,33.2 367.6,33" fill="none" stroke="#807c64" stroke-width="2.2" opacity="0.85"/>
+  <path d="M356.6,45.4 L356.6,43.6 C356.9,42.6 357.4,42 358.2,41.4 C359.2,40.6 360.2,40 361.4,39.4 C362.6,38.8 364,38.2 364.9,37.4 C365.5,36.8 365.2,35.8 365,35 C365,34.2 365.8,33.2 367.6,33 L369.4,32.9" fill="none" stroke="#807c64" stroke-width="2.2" opacity="0.85"/>
   <path d="M358,45.8 L358,44.2 C358.3,42.6 359.4,41.8 360.8,41.2 C362,40.6 363.2,40 364.4,39.3 C365.6,38.6 366.9,38 367.2,37 C367.4,36.1 366.4,35.6 366.5,34.6 C366.6,33.8 367.5,33.4 368.6,33.4 C369.6,33.4 370.8,33.4 372,33.4 C376,33.2 380.5,33.1 384,33.5 C386.6,34.1 388.6,35.4 390,37 C391.2,38.3 392.3,39.1 393.8,39.6 L392,39.8 C388,39.9 384,40 381,40.4 C380,41.2 379.4,42 378.4,42.6 C375.6,43.2 373,43.8 370.4,44.6 C369.6,45.2 369,45.6 368.4,45.9 C364,46.2 360,46.2 358,45.8 Z" fill="url(#bowl-p3)"/>
   <ellipse cx="365.4" cy="37.4" rx="1.4" ry="0.9" fill="#5e4a2c" opacity="0.6" filter="url(#bowl-b03)"/>
   <ellipse cx="372.6" cy="42.6" rx="0.8" ry="0.5" fill="#b0905c" opacity="0.6"/>
+  <ellipse cx="375" cy="38.2" rx="3" ry="0.9" fill="#e2b06f" opacity="0.6" filter="url(#bowl-b05)"/>
+  <ellipse cx="369" cy="35.6" rx="2.6" ry="0.8" fill="#fff0c8" opacity="0.5" filter="url(#bowl-b05)"/>
   <!-- bark under P3 -->
-  <path d="M368.4,45.9 C369.2,45.2 370,44.7 371,44.2 C373.4,43.5 376,42.9 378.4,42.4 C379.6,41.7 380.4,40.9 381.2,40.3 C384.5,39.9 388.5,39.5 393.8,39.4 L393,41.8 C391,42.4 389,43 387.4,43.8 C385.4,44.7 382.6,45.5 379,46 Z" fill="#5a4330"/>
+  <path d="M368.6,45.9 C369.4,45.2 370.2,44.4 371.4,43.8 C373.6,43.3 376.2,43.1 378.4,42.6 C379.6,42 380.4,41 381.4,40.3 C384.5,39.9 388.5,39.5 393.8,39.4 L393,41.6 C391.4,42.2 390,42.8 388.8,43.4 C387.4,44 385,44.6 382,45.2 L378.6,46 Z" fill="#634c2e"/>
+  <path d="M372,44 C376,43.1 380,41.4 384,40.6 C387,40.1 390,39.8 393,39.6" fill="none" stroke="#7a5432" stroke-width="0.8" opacity="0.6" filter="url(#bowl-b03)"/>
   <!-- P3 top edge -->
   <path d="M367.4,33.6 C370,33.2 374,33.2 378,33.1 C380.5,33.1 382.5,33.2 384,33.5" fill="none" stroke="#b9a37e" stroke-width="0.6" opacity="0.6"/>
   <!-- crease P3 / P2 -->
   <path d="M384.4,33.4 C386.8,34.1 388.6,35.4 390,37 C391.3,38.4 392.4,39.2 393.8,39.6" fill="none" stroke="#a06a34" stroke-width="1.1" opacity="0.9"/>
+  <path d="M390.6,38.4 C391.4,39.3 392.8,40 395.2,40.4" fill="none" stroke="#4e2608" stroke-width="1.8" opacity="0.8"/>
   </g>
 </g>
