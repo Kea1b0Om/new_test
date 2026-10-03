@@ -96,13 +96,39 @@
 </g>
 </g>
 </g>
+<g id="heart-cells">
+  <defs>
+    <linearGradient id="heart-cellG" x1="0" y1="-1" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a9d0f7"/><stop offset="0.55" stop-color="#6aa5e6"/><stop offset="1" stop-color="#3f74c4"/>
+    </linearGradient>
+    <radialGradient id="heart-nucG" cx="0.42" cy="0.38" r="0.65">
+      <stop offset="0" stop-color="#5f9ae0"/><stop offset="0.6" stop-color="#2f66b8"/><stop offset="1" stop-color="#1d4c97"/>
+    </radialGradient>
+  </defs>
+  <g transform="translate(656 98.6) rotate(-39)">
+    <path d="M-10.6 0.3C-6 -1.6 -3 -3.1 0.5 -2.9C4 -2.7 7 -1.2 10.6 -0.2C7 1.4 4 2.9 0.3 3.1C-3.4 3.2 -6.4 1.6 -10.6 0.3Z" fill="url(#heart-cellG)" opacity="0.55" filter="url(#heart-b05)"/>
+    <path d="M-10.6 0.3C-6.4 1.6 -3.4 3.2 0.3 3.1C4 2.9 7 1.4 10.6 -0.2" fill="none" stroke="#3a64b0" stroke-width="0.45" opacity="0.6"/>
+    <ellipse cx="-0.6" cy="0.6" rx="2.1" ry="1.7" fill="url(#heart-nucG)"/>
+  </g>
+  <g transform="translate(692.6 89.6) rotate(-34)">
+    <path d="M-11.6 0.3C-7 -1.6 -3.5 -3 0.4 -2.9C4.3 -2.8 7.8 -1.3 11.6 -0.2C7.8 1.4 4.3 2.9 0.3 3.1C-3.7 3.2 -7.2 1.6 -11.6 0.3Z" fill="url(#heart-cellG)" opacity="0.55" filter="url(#heart-b05)"/>
+    <path d="M-11.6 0.3C-7.2 1.6 -3.7 3.2 0.3 3.1C4.3 2.9 7.8 1.4 11.6 -0.2" fill="none" stroke="#3a64b0" stroke-width="0.45" opacity="0.6"/>
+    <ellipse cx="0" cy="0.5" rx="1.9" ry="1.6" fill="url(#heart-nucG)"/>
+  </g>
+  <g transform="translate(676.6 115.9) rotate(-31)">
+    <path d="M-11.2 0.3C-6.8 -1.7 -3.4 -3.2 0.4 -3.1C4.2 -3 7.6 -1.4 11.2 -0.2C7.6 1.5 4.2 3.1 0.3 3.3C-3.6 3.4 -7 1.7 -11.2 0.3Z" fill="url(#heart-cellG)" opacity="0.55" filter="url(#heart-b05)"/>
+    <path d="M-11.2 0.3C-7 1.7 -3.6 3.4 0.3 3.3C4.2 3.1 7.6 1.5 11.2 -0.2" fill="none" stroke="#3a64b0" stroke-width="0.45" opacity="0.6"/>
+    <ellipse cx="-0.6" cy="0.9" rx="2" ry="1.7" fill="url(#heart-nucG)"/>
+  </g>
+</g>
 <g id="heart-magnifier" fill="none">
-  <circle cx="678.8" cy="101.35" r="34.9" stroke="#22171b" stroke-width="1.35"/>
+  <circle cx="678.8" cy="101.35" r="34.9" stroke="#3a2a30" stroke-width="1.9" opacity="0.35" filter="url(#heart-b05)"/>
+  <circle cx="678.8" cy="101.35" r="34.9" stroke="#22171b" stroke-width="1.15"/>
 </g>
 <g id="heart-leader" fill="none" stroke="#1e1416" stroke-linecap="butt">
-  <path d="M644.4 96 L627.45 129.2" stroke-width="1" stroke-dasharray="2.4 1.4" stroke-dashoffset="2.43"/>
-  <path d="M630 131.6 L637.7 131.15" stroke-width="1.15"/>
-  <path d="M637.7 131.15 L657.6 129.55" stroke-width="1.15" stroke-dasharray="2.2 1.3" stroke-dashoffset="1.65"/>
+  <path d="M644.4 96 L627.45 129.2" stroke-width="0.95" stroke-dasharray="2.4 1.4" stroke-dashoffset="2.43"/>
+  <path d="M630 131.6 L637.7 131.15" stroke-width="1.05" stroke="#4a0a10"/>
+  <path d="M637.7 131.15 L657.6 129.55" stroke-width="1.05" stroke="#2a2224" stroke-dasharray="2.2 1.3" stroke-dashoffset="1.65"/>
   <circle cx="627.4" cy="131.9" r="2.7" stroke="#690408" stroke-width="1.2"/>
 </g>
 </g>
