@@ -1,13 +1,13 @@
 <g id="vessel">
 <defs>
-<radialGradient id="vessel-sph" cx="0.5" cy="0.5" r="0.5" fx="0.37" fy="0.34"><stop offset="0" stop-color="#fcd0ff"/><stop offset="0.18" stop-color="#e6aaf8"/><stop offset="0.42" stop-color="#b06cca"/><stop offset="0.68" stop-color="#8d439d"/><stop offset="0.86" stop-color="#6f1f67"/><stop offset="1" stop-color="#7a2c6c" stop-opacity="0.85"/></radialGradient>
-<radialGradient id="vessel-halo" cx="0.45" cy="0.45" r="0.5"><stop offset="0.6" stop-color="#ffe4f4" stop-opacity="0.3"/><stop offset="1" stop-color="#ffe4f4" stop-opacity="0"/></radialGradient>
-<radialGradient id="vessel-rbc" cx="0.5" cy="0.5" r="0.5" fx="0.42" fy="0.42"><stop offset="0" stop-color="#ff8c9c" stop-opacity="0.9"/><stop offset="0.42" stop-color="#f27486" stop-opacity="0.8"/><stop offset="0.66" stop-color="#c64a5c"/><stop offset="0.82" stop-color="#cc5464" stop-opacity="0.7"/><stop offset="1" stop-color="#d45a68" stop-opacity="0"/></radialGradient>
+<radialGradient id="vessel-sph" cx="0.45" cy="0.45" r="0.6" fx="0.34" fy="0.31"><stop offset="0" stop-color="#fcd2ff"/><stop offset="0.12" stop-color="#eab2fb"/><stop offset="0.28" stop-color="#c384e2"/><stop offset="0.45" stop-color="#a45eba"/><stop offset="0.62" stop-color="#8d4498"/><stop offset="0.8" stop-color="#752a70"/><stop offset="0.92" stop-color="#65195b"/><stop offset="1" stop-color="#6a1e5e"/></radialGradient>
+<radialGradient id="vessel-halo" cx="0.5" cy="0.5" r="0.5"><stop offset="0.66" stop-color="#ffe2f8" stop-opacity="0.6"/><stop offset="1" stop-color="#ffe2f8" stop-opacity="0"/></radialGradient>
+<radialGradient id="vessel-rbc" cx="0.5" cy="0.5" r="0.5" fx="0.44" fy="0.44"><stop offset="0" stop-color="#fb8a9c" stop-opacity="0.85"/><stop offset="0.42" stop-color="#f27a8d" stop-opacity="0.8"/><stop offset="0.6" stop-color="#d25668"/><stop offset="0.74" stop-color="#c2495b"/><stop offset="0.88" stop-color="#cc5868" stop-opacity="0.55"/><stop offset="1" stop-color="#d45a68" stop-opacity="0"/></radialGradient>
 <radialGradient id="vessel-lumen" gradientUnits="userSpaceOnUse" cx="283" cy="129" r="11" gradientTransform="translate(283 129) scale(1 2.7) translate(-283 -129)"><stop offset="0" stop-color="#ff9aa0"/><stop offset="0.25" stop-color="#f77a86"/><stop offset="0.45" stop-color="#e8606f"/><stop offset="0.6" stop-color="#c84052"/><stop offset="0.75" stop-color="#b02a40"/><stop offset="0.9" stop-color="#9e1a32"/><stop offset="1" stop-color="#93162b"/></radialGradient>
 <linearGradient id="vessel-rim" gradientUnits="userSpaceOnUse" x1="280" y1="108" x2="298" y2="124"><stop offset="0" stop-color="#f27484"/><stop offset="0.5" stop-color="#f8899a"/><stop offset="0.8" stop-color="#ffaab2"/><stop offset="1" stop-color="#ffc8c6"/></linearGradient>
 <linearGradient id="vessel-side" gradientUnits="userSpaceOnUse" x1="0" y1="96" x2="0" y2="140"><stop offset="0" stop-color="#e2626e"/><stop offset="0.2" stop-color="#e27a80"/><stop offset="0.45" stop-color="#df6973"/><stop offset="0.6" stop-color="#cf555e"/><stop offset="0.75" stop-color="#c84a54"/><stop offset="0.86" stop-color="#d04c58"/><stop offset="1" stop-color="#dc5866"/></linearGradient>
-<linearGradient id="vessel-ldark" gradientUnits="userSpaceOnUse" x1="302" y1="0" x2="346" y2="0"><stop offset="0" stop-color="#a4202f" stop-opacity="0.7"/><stop offset="0.45" stop-color="#b02a38" stop-opacity="0.3"/><stop offset="1" stop-color="#b02a38" stop-opacity="0"/></linearGradient>
-<radialGradient id="vessel-lldark" gradientUnits="userSpaceOnUse" cx="304" cy="132" r="40" gradientTransform="translate(304 132) scale(1 0.55) translate(-304 -132)"><stop offset="0" stop-color="#b22c3c" stop-opacity="0.6"/><stop offset="1" stop-color="#b22c3c" stop-opacity="0"/></radialGradient>
+<linearGradient id="vessel-ldark" gradientUnits="userSpaceOnUse" x1="302" y1="0" x2="346" y2="0"><stop offset="0" stop-color="#a4202f" stop-opacity="0.55"/><stop offset="0.45" stop-color="#b02a38" stop-opacity="0.18"/><stop offset="1" stop-color="#b02a38" stop-opacity="0"/></linearGradient>
+<radialGradient id="vessel-lldark" gradientUnits="userSpaceOnUse" cx="304" cy="132" r="40" gradientTransform="translate(304 132) scale(1 0.55) translate(-304 -132)"><stop offset="0" stop-color="#b22c3c" stop-opacity="0.45"/><stop offset="1" stop-color="#b22c3c" stop-opacity="0"/></radialGradient>
 <linearGradient id="vessel-botw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f87d8b"/><stop offset="0.3" stop-color="#ec6b7b"/><stop offset="0.6" stop-color="#d05466"/><stop offset="0.85" stop-color="#b03f51"/><stop offset="1" stop-color="#9c3a4b"/></linearGradient>
 <filter id="vessel-mb" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation="2.3"/></filter>
 <mask id="vessel-fade" maskUnits="userSpaceOnUse" x="260" y="70" width="200" height="90"><path d="M250,60H429.5C433.5,88 435.6,104 435.6,118C435.6,130 435.2,138 431,160H250Z" fill="#fff" filter="url(#vessel-mb)"/></mask>
@@ -76,35 +76,35 @@
 <path d="M284.6,99C283.4,106 283.2,114 283.6,122" fill="none" stroke="#e0505f" stroke-width="1.6" opacity="0.65" filter="url(#vessel-b6)"/>
 <linearGradient id="vessel-cres" gradientUnits="userSpaceOnUse" x1="0" y1="118" x2="0" y2="140"><stop offset="0" stop-color="#c84c55" stop-opacity="0"/><stop offset="0.25" stop-color="#c34750"/><stop offset="0.6" stop-color="#a62030"/><stop offset="1" stop-color="#9a2a38"/></linearGradient>
 <path d="M297.9,116C297.3,121 296.8,123 296,125.2C295.6,127.5 295.4,129 294.8,130.2C294.2,131.6 293.6,132.6 293.1,133.4C292.5,134.5 292.1,135.4 291.6,136C290.9,137 290.3,137.7 289.6,138.6L292,140.2L296.5,138.6L297.8,128L298.6,116Z" fill="url(#vessel-cres)" filter="url(#vessel-b6)"/>
-<circle cx="388.3" cy="116.5" r="2.9" fill="url(#vessel-rbc)" opacity="0.85"/>
-<circle cx="420.8" cy="111.3" r="2.9" fill="url(#vessel-rbc)" opacity="0.7"/>
-<circle cx="426.6" cy="124" r="2.8" fill="url(#vessel-rbc)" opacity="0.7"/>
-<circle cx="360.1" cy="128.9" r="3" fill="url(#vessel-rbc)" opacity="0.8"/>
-<circle cx="324.6" cy="127.5" r="2.8" fill="url(#vessel-rbc)" opacity="0.4"/>
-<circle cx="398.4" cy="121.4" r="1.6" fill="url(#vessel-rbc)" opacity="0.25"/>
-<circle cx="309.3" cy="110.55" r="5.95" fill="url(#vessel-halo)"/>
-<circle cx="316.65" cy="122.4" r="6.05" fill="url(#vessel-halo)"/>
-<circle cx="330.95" cy="114.9" r="6.05" fill="url(#vessel-halo)"/>
-<circle cx="338.4" cy="127.3" r="6.35" fill="url(#vessel-halo)"/>
-<circle cx="348.55" cy="119.6" r="5.5" fill="url(#vessel-halo)"/>
-<circle cx="362.2" cy="116.3" r="6" fill="url(#vessel-halo)"/>
-<circle cx="373.25" cy="111.9" r="5.95" fill="url(#vessel-halo)"/>
-<circle cx="377.3" cy="124.7" r="6.4" fill="url(#vessel-halo)"/>
-<circle cx="392.6" cy="128.7" r="6.45" fill="url(#vessel-halo)"/>
-<circle cx="403.9" cy="113.8" r="6.05" fill="url(#vessel-halo)"/>
-<circle cx="410.1" cy="124.1" r="6.15" fill="url(#vessel-halo)"/>
+<circle cx="388.6" cy="116.85" r="3.4" fill="url(#vessel-rbc)" opacity="0.9"/>
+<circle cx="420.8" cy="111.4" r="3.2" fill="url(#vessel-rbc)" opacity="0.75"/>
+<circle cx="426.7" cy="124" r="3.1" fill="url(#vessel-rbc)" opacity="0.75"/>
+<circle cx="360.3" cy="129.1" r="3.5" fill="url(#vessel-rbc)" opacity="0.85"/>
+<circle cx="324.6" cy="127.5" r="3" fill="url(#vessel-rbc)" opacity="0.4"/>
+<circle cx="398.5" cy="121.2" r="1.8" fill="url(#vessel-rbc)" opacity="0.25"/>
+<circle cx="308.8" cy="109.8" r="5.7" fill="url(#vessel-halo)"/>
+<circle cx="316.2" cy="122.3" r="5.6" fill="url(#vessel-halo)"/>
+<circle cx="330.7" cy="114" r="5.8" fill="url(#vessel-halo)"/>
+<circle cx="338.2" cy="127.15" r="5.8" fill="url(#vessel-halo)"/>
+<circle cx="348.15" cy="119.05" r="5" fill="url(#vessel-halo)"/>
+<circle cx="361.5" cy="115.75" r="5.6" fill="url(#vessel-halo)"/>
+<circle cx="372.8" cy="111.4" r="5.6" fill="url(#vessel-halo)"/>
+<circle cx="377.15" cy="124.65" r="5.75" fill="url(#vessel-halo)"/>
+<circle cx="392.9" cy="128.9" r="5.8" fill="url(#vessel-halo)"/>
+<circle cx="403.45" cy="113.1" r="5.65" fill="url(#vessel-halo)"/>
+<circle cx="409.7" cy="124.15" r="5.65" fill="url(#vessel-halo)"/>
 <g filter="url(#vessel-bs)">
-<circle cx="309.6" cy="110.85" r="3.75" fill="url(#vessel-sph)"/>
-<circle cx="316.95" cy="122.7" r="3.85" fill="url(#vessel-sph)"/>
-<circle cx="331.25" cy="115.2" r="3.85" fill="url(#vessel-sph)"/>
-<circle cx="338.7" cy="127.6" r="4.15" fill="url(#vessel-sph)"/>
-<circle cx="348.85" cy="119.9" r="3.3" fill="url(#vessel-sph)"/>
-<circle cx="362.5" cy="116.6" r="3.8" fill="url(#vessel-sph)"/>
-<circle cx="373.55" cy="112.2" r="3.75" fill="url(#vessel-sph)"/>
-<circle cx="377.6" cy="125" r="4.2" fill="url(#vessel-sph)"/>
-<circle cx="392.9" cy="129" r="4.25" fill="url(#vessel-sph)"/>
-<circle cx="404.2" cy="114.1" r="3.85" fill="url(#vessel-sph)"/>
-<circle cx="410.4" cy="124.4" r="3.95" fill="url(#vessel-sph)"/>
+<circle cx="309.5" cy="110.5" r="4.1" fill="url(#vessel-sph)"/>
+<circle cx="316.9" cy="123" r="4" fill="url(#vessel-sph)"/>
+<circle cx="331.4" cy="114.7" r="4.2" fill="url(#vessel-sph)"/>
+<circle cx="338.9" cy="127.85" r="4.2" fill="url(#vessel-sph)"/>
+<circle cx="348.85" cy="119.75" r="3.4" fill="url(#vessel-sph)"/>
+<circle cx="362.2" cy="116.45" r="4" fill="url(#vessel-sph)"/>
+<circle cx="373.5" cy="112.1" r="4" fill="url(#vessel-sph)"/>
+<circle cx="377.85" cy="125.35" r="4.15" fill="url(#vessel-sph)"/>
+<circle cx="393.6" cy="129.6" r="4.2" fill="url(#vessel-sph)"/>
+<circle cx="404.15" cy="113.8" r="4.05" fill="url(#vessel-sph)"/>
+<circle cx="410.4" cy="124.85" r="4.05" fill="url(#vessel-sph)"/>
 </g>
 </g>
 </g>
