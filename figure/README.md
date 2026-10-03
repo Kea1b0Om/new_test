@@ -7,7 +7,7 @@ coordinates equal the source image's pixel coordinates (`viewBox="0 0 732 400"`)
 
 | Path | What it is |
 |---|---|
-| `dist/` | Final deliverables: standalone SVG (fonts embedded), 4× PNG, vector PDF, comparison image |
+| `dist/` | Final deliverables: `LGZGD_graphical_abstract.svg` (standalone, fonts embedded), `.png` (2928×1600, 4×), `.pdf` (vector, fonts embedded), `comparison.png` (original vs recreation) |
 | `main.svg` | Layout skeleton: every text line, label box, header, arrow, dashed connector, legend. Illustrations are spliced in at `<!--@include name-->` markers |
 | `parts/*.svg` | One illustration each: `bowl`, `gut`, `vessel`, `heart`, `mouse_fmt`, `mouse_pagly`, `membrane`, `receptor`, `tube` |
 | `fonts/fonts.css` | Source Sans 3 (SIL OFL) as base64 `@font-face` rules, embedded into the built SVG |
@@ -33,3 +33,14 @@ Rendering uses Playwright's Chromium. Measurement helpers: `tools/zoom.py` (grid
 `tools/pick.py` (colour picker), `tools/compare.py` (side-by-side), `tools/align.py` (best sub-pixel
 offset of an element), `tools/textfit.py` + `tools/fittext.mjs` (fit text widths to the original),
 `tools/arrow.py` (tapered arrow paths).
+
+## Re-exporting `dist/`
+
+```sh
+node tools/build.mjs dist/LGZGD_graphical_abstract.svg
+node tools/render.mjs --name full --scale 4 --pdf
+cp out/full.png dist/LGZGD_graphical_abstract.png && cp out/full.pdf dist/LGZGD_graphical_abstract.pdf
+```
+
+For Illustrator / Inkscape editing, open the PDF: those apps ignore fonts embedded via CSS in an SVG
+(they substitute a system font), while the PDF carries the embedded Source Sans 3 glyphs.
